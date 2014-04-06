@@ -1,0 +1,42 @@
+#Conditional Hooks
+$Application: FS2_Open
+$Weapon class: UTM-47 Drache					
+$On Weapon Fired:
+[
+--[[
+***Heavy Yield TOW Missile***
+		By DahBlount
+		
+This is a missile that the player can guide onto a target, in other words, you can fire the missile around the edges of capital ships.
+		
+You shouldn't need to use script-eval, if script doesn't work, please contact me through PM's on the Hard-Light Forums.
+		
+Important Notes!
+Remember to change $Weapon class: to the name of your weapon weapon for it to work properly.
+]]--
+    local weapon
+
+    local num = #mn.Weapons
+    for i=1,num do
+        if mn.Weapons[i].Class.Name == "UTM-47 Drache" then
+            weapon = mn.Weapons[i]
+        break end
+    end
+
+	playerVec = hv.Player.Position
+	playerFvec = hv.Player.Orientation:getFvec()
+	missileVec = playerVec+playerFvec*10000
+	
+	if hv.Player:isValid() then
+		
+		if missileVec then
+			weapon.HomingPosition = missileVec
+		else
+			weapon.HomingPosition = nil
+		end
+		
+		
+	end
+	
+]
+#End

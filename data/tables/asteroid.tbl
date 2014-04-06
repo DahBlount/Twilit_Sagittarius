@@ -1,0 +1,219 @@
+;  file to indicate all asteroid types and their physical characteristics
+
+#Asteroid Types
+
+$Name:				Small Asteroid
+$POF file1:			ast03.pof
+$POF file2:			asta03.pof
+$POF file3:			astb03.pof
+$Detail distance:	(0, 200, 400, 600)
+$Max Speed:			60.0
+$Expl inner rad:	0.0
+$Expl outer rad:	0.0
+$Expl damage:		0.0		;; set to zero for no area effect
+$Expl blast:		0.0
+$Hitpoints:			493			;;	Note, modified downward by Skill_level
+
+$Name:				Medium Asteroid
+$POF file1:			ast02.pof
+$POF file2:			asta02.pof
+$POF file3:			astb02.pof
+$Detail distance:	(0, 400, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	25.0
+$Expl outer rad:  75.0
+$Expl damage:		20.0		;; set to zero for no area effect
+$Expl blast:      1000.0
+$Hitpoints:			776			;;	Note, modified downward by Skill_level
+
+$Name:				Large Asteroid
+$POF file1:			ast01.pof
+$POF file2:			asta01.pof
+$POF file3:			astb01.pof
+$Detail distance:	(0, 500, 700, 900)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			1150		;;	Note, modified downward by Skill_level
+
+;; BEGIN SHIP DEBRIS SECTION
+;; TERRAN DEBRIS
+$Name:				Terran Debris 1
+$POF file1:			Tdebris01.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Terran Debris 2
+$POF file1:			Tdebris02.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Terran Debris 3
+$POF file1:			Tdebris03.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+;; VASUDAN DEBRIS
+$Name:				Vasudan Debris 1
+$POF file1:			Vdebris01.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Vasudan Debris 2
+$POF file1:			Vdebris02.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Vasudan Debris 3
+$POF file1:			Vdebris03.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:
+		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+;; SHIVAN DEBRIS
+$Name:				Shivan Debris 1
+$POF file1:			Sdebris01.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Shivan Debris 2
+$POF file1:			Sdebris02.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Shivan Debris 3
+$POF file1:			Sdebris03.pof
+$POF file2:			none
+$Detail distance:	(0, 1500, 3000)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147
+
+;; UTN DEBRIS
+$Name:				UTN Debris 1
+$POF file1:			Tdebris01.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				UTN Debris 2
+$POF file1:			Tdebris02.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				UTN Debris 3
+$POF file1:			Tdebris03.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+
+
+;; KOBALOI DEBRIS
+$Name:				Kobaloi Debris 1
+$POF file1:			Sdebris01.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Kobaloi Debris 2
+$POF file1:			Sdebris02.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+$Name:				Kobaloi Debris 3
+$POF file1:			Sdebris03.pof
+$POF file2:			none
+$Detail distance:	(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:	100.0
+$Expl outer rad:	200.0
+$Expl damage:		50.0		;; set to zero for no area effect
+$Expl blast:		3000.0
+$Hitpoints:			147		;;	Note, modified downward by Skill_level
+
+
+#End
+
+$Impact Explosion:			ExpMissilehit1		; ani played when laser hits asteroid
+$Impact Explosion Radius:	20.0				; radius that animation will have					

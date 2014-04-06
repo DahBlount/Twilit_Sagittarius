@@ -1,0 +1,45 @@
+#Muzzle flash types
+
+$Mflash:
++name:			GatFlash		;; whatever you want to name it
++blob_name:		mdflash					
++blob_offset:	0.4 
++blob_radius:	0.8		
+
+$Mflash:
++name: 			gausscannon_karuna
++blob_name: 	exp06b
++blob_offset: 	0.0
++blob_radius: 	5.0
++blob_name: 	exp06b
++blob_offset: 	5.0
++blob_radius: 	10.0
++blob_name: 	exp06b
++blob_offset: 	12.5
++blob_radius: 	15.0
++blob_name: 	exp06b
++blob_offset: 	27.5
++blob_radius: 	30.0
++blob_name: 	exp06b
++blob_offset: 	42.5
++blob_radius: 	30.0
+
+$Mflash:
++name: 			massdriver_narayana
++blob_name: 	exp06
++blob_offset: 	0.0
++blob_radius: 	10.0
++blob_name: 	exp06
++blob_offset: 	10.0
++blob_radius: 	20.0
++blob_name: 	exp06
++blob_offset: 	25.0
++blob_radius: 	30.0
++blob_name: 	exp06
++blob_offset: 	55.0
++blob_radius: 	60.0
++blob_name: 	exp06
++blob_offset: 	85.0
++blob_radius: 	60.0
+
+#End

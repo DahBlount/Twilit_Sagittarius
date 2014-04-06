@@ -1,0 +1,230 @@
+#Ship Classes
+
+;--------------------------------------------------------
+; TERRAN SHIPS
+;
+$Name:                          UTNF Gilgamesh
+$Short name:					TFight100
+$Species:                       UTN
++Type:                          XSTR("Multi-Role Fighter", -1)
++Maneuverability:				XSTR("Excellent", -1)
++Armor:                         XSTR("Heavy", -1)
++Manufacturer:					XSTR("Reagan Technologies", -1)
++Description:					XSTR(" ", -1)
+$end_multi_text
++Tech Description:
+XSTR("The newest fighter from Reagan Tech, it incorporates a COFFIN v3.0 cockpit instead of the usual glass canopy. With an excellent balance of speed, manoeuvrability, armor, and payload, the Gilgamesh is one of the most advanced fighters built to date.", -1)
+$end_multi_text
++Length:          27 m
++Gun Mounts:      8
++Missile Banks:   2
+$POF file:                      GilgameshFighter.pof
+$Detail distance:				(0, 180, 300, 1100)
+$ND: 							144 234 237
+$ND: 							60 231 239
+$ND: 							78 151 156
+$ND: 							30 179 189
+$Show damage:					YES
+$Density:                       1
+$Damp:                          0.25
+$Rotdamp:                       0.4
+$Max Velocity:					0.0, 0.0, 245.0                  ;; in x/y/z -- z only specified forward.  use special tokens for backward movement
+$Rotation time:					2.0, 3.0, 2.0
+$Rear Velocity:					175.0
+$Forward accel:					3.6
+$Forward decel:					1.3
+$Slide accel:					0.0
+$Slide decel:					0.0
+$Glide:							YES
+	+Max Glide Speed:			350
+	+Glide Accel Mult:			-1
+$Autoaim FOV:					35
+	+Converging Autoaim
+	+Minimum Distance: 			200
+$Expl inner rad:				25.0
+$Expl outer rad:				75.0
+$Expl damage:					25.0
+$Expl blast:					1000.0
+$Expl Propagates:				NO			;; If set to Yes, then when the ship dies, the explosion propagates through it.
+$Shockwave Speed:				0.0			;; speed shockwave expands at, 0 means no shockwave
+$Allowed PBanks:				( "Prudr" "Collbrande" "Spitfire" "Subach HL-7" "Akheton SDG" "Morning Star" "Prometheus S" "Prometheus R" "UD-8 Kayser" "Lamprey" "Circe" "Maxim" )
+$Allowed Dogfight PBanks:			( "MorningStar D" "UD-D Kayser" "Circe" "Lamprey" "Maxim D" )
+$Default PBanks:				( "Prudr" "Spitfire" )
+$PBank Capacity:				( 300,300)
+$Allowed SBanks:				( "Rockeye" "Blitz" "Drache" "Tempest" "Harpoon" "Trebuchet" "Infyrno" "Hornet" "Tornado" "Hornet#Weak" "EMP Adv." "TAG-A" "TAG-B" )
+$Allowed Dogfight SBanks:				( "Harpoon D" "Tornado D" )
+$Default SBanks:				( "Trebuchet" "Blitz" )
+$SBank Capacity:				( 80, 120 )
+$Shields:						500
+$Shield Color:				255 0 0
+$Power Output:					3.3
+$Max Oclk Speed:				270.0
+$Max Weapon Eng:				150.0
+$Hitpoints:                     325
+$Flags:                         ( "player_ship" "fighter" "in tech database" "generate icon" )
+$AI Class:                      Captain
+$Afterburner:					YES
+	+Aburn Max Vel:				0.0, 0.0, 350.0
+	+Aburn For accel:			0.75
+	+Aburn Fuel:				880.0
+	+Aburn Burn Rate:			15.0
+	+Aburn Rec Rate:			135.0
+$Trails:
+	+Bitmap:					TrailUT
+	+Width:						2.5
+	+Alpha:						1.0
+	+Life:						2
+$Countermeasures:				25
+$Scan time:                     2000
+$EngineSnd:						126                   ;; Engine sound of ship
+$Closeup_pos:					0.0, 0.0, -30
+$Closeup_zoom:					0.5
+$Ship_icon:                     
+$Ship_anim:                     
+$Ship_overhead:					
+$Score:							12
+$Trail:
+	+Offset:				2.7 4.3 -9.45
+	+Start Width:			0.25
+	+End Width:				0.05
+	+Start Alpha:			1.0
+	+End Alpha:				0.0
+	+Max Life:				1.0
+	+Spew Time:				120
+	+Bitmap:				Contrail01
+$Trail:
+	+Offset:				 -2.7 4.3 -9.45
+	+Start Width:			0.25
+	+End Width:				0.05
+	+Start Alpha:			1.0
+	+End Alpha:				0.0
+	+Max Life:				1.0
+	+Spew Time:				120
+	+Bitmap:				Contrail01
+$Trail:
+	+Offset:				2.47 -4.32 -9.29
+	+Start Width:			0.25
+	+End Width:				0.05
+	+Start Alpha:			1.0
+	+End Alpha:				0.0
+	+Max Life:				1.0
+	+Spew Time:				120
+	+Bitmap:				Contrail01
+$Trail:
+	+Offset:				-2.47 -4.32 -9.29
+	+Start Width:			0.25
+	+End Width:				0.05
+	+Start Alpha:			1.0
+	+End Alpha:				0.0
+	+Max Life:				1.0
+	+Spew Time:				120
+	+Bitmap:				Contrail01
+$Subsystem:                     sensors,                                10,0.0
+$Subsystem:                     communications, 10,0.0
+$Subsystem:                     weapons,                                10,0.0
+$Subsystem:                     navigation,                     10,0.0
+$Subsystem:                     enginect,                         35,0.0
+$Subsystem:                     enginelm,                         35,0.0
+$Subsystem:                     enginerm,                         35,0.0
+$Subsystem:                     enginelp,                         35,0.0
+$Subsystem:                     enginerp,                         35,0.0
+
+
+
+;-------------------------------------------------------
+; KOBALOI SHIPS
+;
+
+$Name:                          KF Ifrit
+$Short name:            fighter3s-03
+$Species:                       Kobaloi
++Tech Description:
+XSTR(
+"A basic fighter fielded by the Kobaloi.", -1)
+$end_multi_text
+$POF file:                     fighter3s-03.pof
+$Detail distance:       (0, 80, 160, 500)
+$Show damage:           YES
+$Density:                       1
+$Damp:                          0.1
+$Rotdamp:                       0.4
+$Max Velocity:          70.0, 95.0, 110.0
+$Rotation time:         2.5, 2.0, 2.0
+$Rear Velocity:         70.0
+$Forward accel:         2.0
+$Forward decel:         0.75
+$Slide accel:           4.0
+$Slide decel:           4.0
+$Glide: YES
+$Expl inner rad:        25.0
+$Expl outer rad:        55.0
+$Expl damage:           15.0
+$Expl blast:            1000.0
+$Expl Propagates:       NO
+$Shockwave Speed:       0.0
+$Default PBanks:        ( "Subach HL-7" "Subach HL-7" )
+$Default SBanks:        ( "Trebuchet" )
+$SBank Capacity:        ( 60 )
+$Shields:                       950
+$Shield Color:		100 100 100
+$Power Output:          2.0
+$Shield Regeneration Rate: 0.06
+$Max Oclk Speed:        100.0
+$Max Weapon Eng:        100.0
+$Hitpoints:                     300
+$Flags:                         ( "fighter" )
+$AI Class:                      Captain
+$Afterburner:           YES
+	+Aburn Max Vel: 0.0, 0.0, 210.0
+	+Aburn For accel:       0.2
+	+Aburn Fuel:            200.0
+	+Aburn Burn Rate:       60.0
+	+Aburn Rec Rate:        25.0
+$Trails:
+	+Bitmap:					TrailKB
+	+Width:						2.5
+	+Alpha:						1.0
+	+Life:						2
+$Countermeasures:       20
+$Scan time:                     2000
+$EngineSnd:       132     
+$Closeup_pos:           0.0, 0.5, -20
+$Closeup_zoom:          0.5
+$Shield_icon:           fighter3s-03-hud
+$Score:             16
+$Trail:
+	+Offset:		4.7 3.4 -7.9
+	+Start Width:	0.25
+	+End Width:	0.05
+	+Start Alpha:	1.0
+	+End Alpha:	0.0
+	+Max Life:	1.0
+	+Spew Time:	120
+	+Bitmap:	Contrail01
+$Trail:
+	+Offset:		-4.7 3.4 -7.9
+	+Start Width:	0.25
+	+End Width:	0.05
+	+Start Alpha:	1.0
+	+End Alpha:	0.0
+	+Max Life:	1.0
+	+Spew Time:	120
+	+Bitmap:	Contrail01
+$Trail:
+	+Offset:		0.0 -4.1 -1.5
+	+Start Width:	0.25
+	+End Width:	0.05
+	+Start Alpha:	1.0
+	+End Alpha:	0.0
+	+Max Life:	1.0
+	+Spew Time:	120
+	+Bitmap:	Contrail01
+$Subsystem:                     sensors,                        10,0.0
+$Subsystem:                     communication,  10,0.0
+$Subsystem:                     engine,                 35,0.0
+$Subsystem:                     weapons,                        15,0.0
+$Subsystem:                     navigation,              5,0.0
+
+
+
+#End

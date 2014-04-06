@@ -1,0 +1,23 @@
+#Game Sounds Start
+$Name: CanSpread
+	+FileName: CannonSpread
+	+Preload: yes
+	+Volume: 0.80
+	+3D Sound:
+		+Attenuation start: 50
+		+Attenuation end: 400 
+$Name: GatSnd
+	+FileName: GattlingSnd
+	+Preload: yes
+	+Volume: 0.90
+	+3D Sound:
+		+Attenuation start: 50
+		+Attenuation end: 400
+$Name: MassDriver
+	+FileName: massdriver
+	+Preload: yes
+	+Volume: 0.70
+	+3D Sound:
+		+Attenuation start: 2000
+		+Attenuation end: 3000
+#Game Sounds End

@@ -1,0 +1,45 @@
+#SPECIES DEFS
+
+;---------------------
+;United Terran Navy
+;---------------------
+$Species_Name: UTN
+$Default IFF: Friendly
+$FRED Color: ( 10, 185, 230 )
+$MiscAnims:
+   +Debris_Texture: debris01a
+   +Shield_Hit_ani: shieldhit01a
+$ThrustAnims:
+	+Pri_Normal: <none>
+	+Pri_Afterburn: <none>
+	+Sec_Normal: thruster02-01UT
+	+Sec_Afterburn: thruster02-01UTa
+	+Ter_Normal: thruster03-01UT
+	+Ter_Afterburn: thruster03-01UTa
+$ThrustGlows:
+	+Normal: thrusterglow01UT
+	+Afterburn: thrusterglow01UTa
+$AwacsMultiplier: 1.00
+
+;---------------------
+;Kobaloi
+;---------------------
+$Species_Name: Kobaloi
+$Default IFF: Hostile
+$FRED Color: ( 255, 0, 185 )
+$MiscAnims:
+   +Debris_Texture: debris01a
+	+Shield_Hit_ani: shieldhit03a
+$ThrustAnims:
+	+Pri_Normal: <none>
+	+Pri_Afterburn: <none>
+	+Sec_Normal: thruster02-03KB
+	+Sec_Afterburn: thruster02-03KBa
+	+Ter_Normal: thruster03-03KB
+	+Ter_Afterburn: thruster03-03KBa
+$ThrustGlows:
+	+Normal: thrusterglow03KB
+	+Afterburn: thrusterglow03KBa
+$AwacsMultiplier: 1.00
+
+#End

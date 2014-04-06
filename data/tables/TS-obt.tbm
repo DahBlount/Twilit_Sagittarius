@@ -1,0 +1,17 @@
+#Target Priorities
+
+$Name:		HeavyCap
+
+#End
+
+#Ship Types
+
+$Name:		Capital
+	+nocreate
+$Target Priority Groups:		( "HeavyCap" )
+
+$Name:		super cap
+	+nocreate
+$Target Priority Groups:		( "HeavyCap" )
+
+#End
