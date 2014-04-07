@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 04/05/14 at 15:49:55
+$Modified: 04/07/14 at 07:27:26
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 3607.603271, 863.649109, 5769.588867
++Viewer pos: -6570.402344, 612.434265, 6631.148926
 +Viewer orient:
-	-0.659298, 0.000002, 0.751882,
-	0.051249, 0.997674, 0.044936,
-	-0.750133, 0.068160, -0.657765
+	0.163463, 0.000002, 0.986550,
+	-0.537417, 0.838602, 0.089044,
+	-0.827323, -0.544744, 0.137081
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -1056,21 +1056,28 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
++Primary Banks: ( "MPurp" )
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
++Sbank Ammo: ( 0 )
 +Subsystem: turret05
++Primary Banks: ( "MPurp" )
 +Subsystem: turret06
++Primary Banks: ( "MPurp" )
 +Subsystem: turret07
 +Subsystem: turret08
 +Subsystem: turret09
 +Subsystem: turret10
 +Subsystem: turret11
++Primary Banks: ( "Shivan Turret Laser" )
 +Subsystem: turret12
 +Subsystem: turret13
++Sbank Ammo: ( 0 )
 +Subsystem: turret14
 +Subsystem: turret15
 +Subsystem: turret16
++Sbank Ammo: ( 0 )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1099,21 +1106,28 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
++Primary Banks: ( "MPurp" )
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
++Sbank Ammo: ( 0 )
 +Subsystem: turret05
++Primary Banks: ( "MPurp" )
 +Subsystem: turret06
++Primary Banks: ( "MPurp" )
 +Subsystem: turret07
 +Subsystem: turret08
 +Subsystem: turret09
 +Subsystem: turret10
 +Subsystem: turret11
++Primary Banks: ( "Shivan Turret Laser" )
 +Subsystem: turret12
 +Subsystem: turret13
++Sbank Ammo: ( 0 )
 +Subsystem: turret14
 +Subsystem: turret15
 +Subsystem: turret16
++Sbank Ammo: ( 0 )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1795,8 +1809,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
++Primary Banks: ( "SPurp" )
 +Subsystem: turret03
++Primary Banks: ( "SPurp" )
 +Subsystem: turret04
 +Subsystem: turret05
 +Subsystem: turret06

@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 04/05/14 at 15:51:32
+$Modified: 04/07/14 at 07:28:23
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -6570.402344, 612.434265, 6631.148926
++Viewer pos: 3979.037598, 788.494324, 3808.759766
 +Viewer orient:
-	0.163462, 0.000002, 0.986550,
-	-0.537417, 0.838603, 0.089044,
-	-0.827323, -0.544744, 0.137081
+	-0.003071, 0.000001, -0.999995,
+	0.537541, 0.843236, -0.001649,
+	0.843232, -0.537543, -0.002590
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -1056,15 +1056,15 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
 +Sbank Ammo: ( 0 )
 +Subsystem: turret05
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret06
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret07
 +Subsystem: turret08
 +Subsystem: turret09
@@ -1809,9 +1809,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
++Primary Banks: ( "SPurp" )
 +Subsystem: turret03
++Primary Banks: ( "SPurp" )
 +Subsystem: turret04
 +Subsystem: turret05
 +Subsystem: turret06
@@ -1852,8 +1854,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
++Primary Banks: ( "SPurp" )
 +Subsystem: turret03
++Primary Banks: ( "SPurp" )
 +Subsystem: turret04
 +Subsystem: turret05
 +Subsystem: turret06

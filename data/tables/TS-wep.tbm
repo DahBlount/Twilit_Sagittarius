@@ -660,6 +660,100 @@ $Burst Flags:					( "fast firing" )
 ;end
 
 
+;----------------------------------------------------------
+;STurq
+;
+$Name:		STurq
+	+Tech Title:					XSTR( "'Freyja' Light Beam", -1 )
+	+Tech Description:				XSTR( "The Freyja light beam system, while overall fairly weak, is a great improvement over previous light beams.", -1 )
+$end_multi_text
+$Model File:						none
+@Laser Bitmap:						laserglow01
+@Laser Color:						88, 176, 249
+@Laser Length:						0.0
+@Laser Head Radius:					0.3
+@Laser Tail Radius:					0.3
+$Mass:								100.0
+$Velocity:							1750.0
+$Fire Wait:							40.0
+$Damage:							320
+$Damage Type: 						HugeBeam
+$Armor Factor:						1.0
+$Shield Factor:						1.0
+$Subsystem Factor:					1.0
+$Lifetime:							25
+$Energy Consumed:					0.40
+$Cargo Size:						0.0
+$Homing:							NO
+$LaunchSnd:							124
+$ImpactSnd:							88
++Weapon Range:						4250
+$Flags: 							( "Big Ship" "huge" "beam" "same turret cooldown" )
+$Impact Explosion: 					exp04
+$Impact Explosion Radius: 			20
+$BeamInfo:
+	+Type:									0
+	+Life:									2.5
+	+Warmup:								2000
+	+Warmdown:								5150
+	+Radius:								55.0
+	+PCount:								40
+	+PRadius:								3.0
+	+PAngle:								60.0
+	+PAni:									particle_Turq
+	+Miss Factor:							1.4 1.3 1.2 1.1 1.0
+	+BeamSound:								146
+	+WarmupSound:							153
+	+WarmdownSound:							158
+	+Muzzleglow:							BlueBeamGlow2
+	+Shots:									0
+	+ShrinkFactor:							0.0
+	+ShrinkPct:								0.0
+	+BeamWidth: 							25.0
+	+Beam Flash Effect: 					capflash
+	+Beam Flash Radius: 					12.5
+	+Beam Piercing Effect: 					exp06
+	+Beam Piercing Radius: 					12.5
+	+Beam Piercing Effect Velocity: 		200
+	+Beam Piercing Splash Effect Velocity: 	-20
+	+Beam Piercing Effect Variance: 		0.01
+	$Section:
+		+Width:			7
+		+Texture:		STurqCore
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.1
+		+Zadd:			8
+		+Tile Factor:	9, 1
+		+Translation:	-18
+	$Section:
+		+Width:			14
+		+Texture:		STurqHaze1
+		+RGBA Inner:	160 160 0 255
+		+RGBA Outer:	60 60 0 10
+		+Flicker:		0.15
+		+Zadd:			6
+		+Tile Factor:	12, 1
+		+Translation:	-10
+	$Section:
+		+Width:			25.0
+		+Texture:		STurqHaze2
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.25
+		+Zadd:			3
+		+Tile Factor:	12, 1
+		+Translation:	-6
+	$Section:
+		+Width:			40.0
+		+Texture:		TurqFade
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.35
+		+Zadd:			1
+;end
+
+
 ; ----------------------------------------------------------------------------------
 ; Rindr
 ;
@@ -961,6 +1055,100 @@ $BeamInfo:
 	$Section:
 		+Width:			90.0
 		+Texture:		TurqFade
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.35
+		+Zadd:			1
+;end
+
+
+;----------------------------------------------------------
+;SPurp
+;
+$Name:		SPurp
+	+Tech Title:					XSTR( "'Light Beam", -1 )
+	+Tech Description:				XSTR( "", -1 )
+$end_multi_text
+$Model File:						none
+@Laser Bitmap:						laserglow01
+@Laser Color:						88, 176, 249
+@Laser Length:						0.0
+@Laser Head Radius:					0.3
+@Laser Tail Radius:					0.3
+$Mass:								100.0
+$Velocity:							1750.0
+$Fire Wait:							40.0
+$Damage:							320
+$Damage Type: 						HugeBeam
+$Armor Factor:						1.0
+$Shield Factor:						1.0
+$Subsystem Factor:					1.0
+$Lifetime:							25
+$Energy Consumed:					0.40
+$Cargo Size:						0.0
+$Homing:							NO
+$LaunchSnd:							124
+$ImpactSnd:							88
++Weapon Range:						4250
+$Flags: 							( "Big Ship" "huge" "beam" "same turret cooldown" )
+$Impact Explosion: 					exp04
+$Impact Explosion Radius: 			20
+$BeamInfo:
+	+Type:									0
+	+Life:									2.5
+	+Warmup:								2000
+	+Warmdown:								5150
+	+Radius:								55.0
+	+PCount:								40
+	+PRadius:								3.0
+	+PAngle:								60.0
+	+PAni:									particle_purp
+	+Miss Factor:							1.4 1.3 1.2 1.1 1.0
+	+BeamSound:								146
+	+WarmupSound:							153
+	+WarmdownSound:							158
+	+Muzzleglow:							PBeamAGlow
+	+Shots:									0
+	+ShrinkFactor:							0.0
+	+ShrinkPct:								0.0
+	+BeamWidth: 							25.0
+	+Beam Flash Effect: 					capflash
+	+Beam Flash Radius: 					12.5
+	+Beam Piercing Effect: 					exp06
+	+Beam Piercing Radius: 					12.5
+	+Beam Piercing Effect Velocity: 		200
+	+Beam Piercing Splash Effect Velocity: 	-20
+	+Beam Piercing Effect Variance: 		0.01
+	$Section:
+		+Width:			7
+		+Texture:		SPurpCore
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.1
+		+Zadd:			8
+		+Tile Factor:	9, 1
+		+Translation:	-18
+	$Section:
+		+Width:			14
+		+Texture:		SPurpHaze1
+		+RGBA Inner:	160 160 0 255
+		+RGBA Outer:	60 60 0 10
+		+Flicker:		0.15
+		+Zadd:			6
+		+Tile Factor:	12, 1
+		+Translation:	-10
+	$Section:
+		+Width:			25.0
+		+Texture:		SPurpHaze2
+		+RGBA Inner:	255 255 255 255
+		+RGBA Outer:	150 150 150 10
+		+Flicker:		0.25
+		+Zadd:			3
+		+Tile Factor:	12, 1
+		+Translation:	-6
+	$Section:
+		+Width:			40.0
+		+Texture:		PurpFade
 		+RGBA Inner:	255 255 255 255
 		+RGBA Outer:	150 150 150 10
 		+Flicker:		0.35
