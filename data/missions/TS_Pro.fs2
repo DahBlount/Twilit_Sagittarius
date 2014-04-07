@@ -2915,7 +2915,7 @@ $List: (		;! 1 points in list
 
 $Name: Coast is Clear
 $Team: -1
-$MessageNew:  XSTR("Everything looks clear Dante. Jump in.
+$MessageNew:  XSTR("Everything looks clear, Dante. Jump in.
 ", -1)
 $end_multi_text
 +Persona: Wingman 4
@@ -2923,14 +2923,14 @@ $end_multi_text
 
 $Name: Thank you Uranium
 $Team: -1
-$MessageNew:  XSTR("Thank you Uranium, leaving subspace in 10", -1)
+$MessageNew:  XSTR("Thank you Uranium, leaving subspace in 10...", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: So What...
 $Team: -1
-$MessageNew:  XSTR("So what exactly are we looking at?", -1)
+$MessageNew:  XSTR("So. What, exactly, are we looking at?", -1)
 $end_multi_text
 +Persona: Wingman 1
 +AVI Name: Head-TP1
@@ -2951,35 +2951,35 @@ $end_multi_text
 
 $Name: Don't know
 $Team: -1
-$MessageNew:  XSTR("We don't know. Hopefully, the scientists can discern the anomalies origins.", -1)
+$MessageNew:  XSTR("We don't know. Hopefully, our scientists can discern the anomalies origins.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Unknowns
 $Team: -1
-$MessageNew:  XSTR("Unknown ships are jumping in! All wings prepare for immediate attack!", -1)
+$MessageNew:  XSTR("Unknown ships are jumping in! All wings, prepare for immediate attack!", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Return to base
 $Team: -1
-$MessageNew:  XSTR("Great Job pilots, you may return to base.", -1)
+$MessageNew:  XSTR("Great job, pilots. You may return to base.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Dante Destroyed
 $Team: -1
-$MessageNew:  XSTR("The Dante has been destroyed, we need to call for immediate reinforcements and regroup.", -1)
+$MessageNew:  XSTR("The Dante has been destroyed. We need to call for immediate reinforcements and regroup.", -1)
 $end_multi_text
 +Persona: Wingman 3
 +AVI Name: Head-TP3
 
 $Name: Send in the science vessels
 $Team: -1
-$MessageNew:  XSTR("All hostiles are destroyed, send in the science vessels.", -1)
+$MessageNew:  XSTR("All hostiles are destroyed. Clear the science vessels for arrival.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
@@ -3000,14 +3000,14 @@ $end_multi_text
 
 $Name: Thanks for the help
 $Team: -1
-$MessageNew:  XSTR("Thank you for the help Uranium.", -1)
+$MessageNew:  XSTR("Thank you for the help, Uranium.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Thanks
 $Team: -1
-$MessageNew:  XSTR("Thanks for the help Uranium.", -1)
+$MessageNew:  XSTR("Thanks for the help, Uranium.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM5
