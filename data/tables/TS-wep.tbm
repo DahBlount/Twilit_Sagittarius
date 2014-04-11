@@ -62,7 +62,7 @@ $end_multi_text
 +Tech Title:				    XSTR("UTW-13 Spitfire", -1)
 +Tech Anim:                     Tech_GTW_ML-70
 +Tech Description:
-XSTR( "A spreader cannon that fires a 185mm shell filled with explosive Tungsten shrapnel designed to sheer through both shields and armour.", -1)
+XSTR( "A spreader cannon that fires a 185mm shell filled with explosive Tungsten shrapnel designed to shear through both shields and armour.", -1)
 $end_multi_text
 $Tech Model: wep_collbrande_tech.pof
 $Model File:									none
@@ -274,7 +274,7 @@ $BeamInfo:
 $Name:                          TurqBurstAAA
 	+Tech Title:			XSTR( "'Dellingr' Anti-Fighter Beam", -1 )
 +Tech Anim:		 tech_exaaa
-	+Tech Description:		XSTR( "The 'Dellingr' Anti-Fighter beam is able to fire several shots in quick succession before entering a brief cooldown sequence. Highly effective against even the heaviest of bombers, this can be used as a sumplement against capital ships.",  -1 )
+	+Tech Description:		XSTR( "The 'Dellingr' Anti-Fighter beam is able to fire several shots in quick succession before entering a brief cooldown sequence. Highly effective against even the heaviest of bombers, this can also be used as a supplementary weapon against capital ships.",  -1 )
 $end_multi_text
 $Model File:                    none ; laser1-1.pof
 @Laser Bitmap:                  laserglow01
@@ -455,7 +455,7 @@ $BeamInfo:
 
 $Name:		TerSlashTurq
 	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
-	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
+	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -559,7 +559,7 @@ $BeamInfo:
 
 $Name:		TerBSlashTurq
 	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
-	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
+	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -760,7 +760,7 @@ $BeamInfo:
 
 $Name:		MTurq
 	+Tech Title:					XSTR( "'Rindr' Beam System", -1 )
-	+Tech Description:				XSTR( "The 'Rindr' is a mid-range, direct fire beam system designed to be fired in salvoes. It is able to penetrate TiMo alloy armour with a thickness of 15cm. ", -1 )
+	+Tech Description:				XSTR( "The 'Rindr' is a mid-range, direct fire beam system designed to be fired in salvoes. It is able to penetrate TiMo alloy armour with a thickness of 15cm. Thicker armor resists immediate breach due to thermal spalling effects.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -864,7 +864,7 @@ $BeamInfo:
 
 $Name:		LTurq
 	+Tech Title:					XSTR( "'Baldr' Heavy Beam", -1 )
-	+Tech Description:				XSTR( "The 'Baldr' heavy beam is one of the most powerful photon beam cannons ever mounted on UTN ships only being out done by the 'Woden' heavy beam. ", -1 )
+	+Tech Description:				XSTR( "The 'Baldr' heavy beam is one of the most powerful photon beam cannons ever mounted on UTN ships, only outdone by the 'Woden' heavy beam. ", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -964,7 +964,7 @@ $BeamInfo:
 
 $Name:		HTurq
 	+Tech Title:					XSTR( "'Woden' Heavy Beam", -1 )
-	+Tech Description:				XSTR( "Offering massive direct-fire engagement capability. This advanced beam weapon uses metric tons of slurry coolant and consumes the full power output of a dedicated meson reactor. A complicated fire-control subsystem helps the beam burn through particulate interference and vaporized target material.", -1 )
+	+Tech Description:				XSTR( "Offering massive direct-fire engagement capability, this advanced beam weapon uses metric tons of slurry coolant and consumes the full power output of a dedicated meson reactor. A complicated fire-control subsystem helps the beam burn through particulate interference and vaporized target material.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -1387,13 +1387,13 @@ $Name:		@Lancelet
 +Title:                                 XSTR("Mk-I PLS Prototype", -1)
 +Description:
 XSTR(
-"The Mk-I Parametric Laser System is like any other laser but can be more easily manipulated using magnetic fields to guide the weapon onto it's final attack vector. Still in prototype phase.", -1)
+"The Mk-I Parametric Laser System is like any other laser, but can be more easily manipulated using magnetic fields to guide the weapon onto its final attack vector. Still in prototype phase.", -1)
 $end_multi_text
 +Tech Title:				   XSTR("Mk-I PLS Prototype", -1)
 +Tech Anim:					   Tech_GTM-55_Trebuchet
 +Tech Description:
 XSTR(
-"The Mk-I Vertical Beam System is similar to a photon cannon but can be more easily manipulated using magnetic fields to guide the weapon onto it's final attack vector. Still in prototype phase.", -1)
+"The Mk-I Vertical Beam System is similar to a photon cannon, but can be more easily manipulated using magnetic fields to guide the weapon onto its final attack vector. Still in prototype phase.", -1)
 $end_multi_text
 $Model File:						hornet.pof
 $POF target LOD:					0
@@ -1542,13 +1542,13 @@ $Name:                                  @Onager
 +Title:                                 XSTR("UTM-32 Onager", -1)
 +Description:
 XSTR(
-"The Onager is a long-range, high payload missile typically used to destroy bombers.", -1)
+"The Onager is a long-range, high payload missile, typically used to destroy bombers.", -1)
 $end_multi_text
 +Tech Title:				   XSTR("UTM-32 Onager", -1)
 +Tech Anim:					   Tech_GTM-55_Trebuchet
 +Tech Description:
 XSTR(
-"The new UTM-32 Onager was developed as a long-range, anti-bomber missile with an effective range of 4,000 meters. It also utilizes the latest in precision targeting technology for short lock times. The Onager plays a vital role in defensive missions, enabling escort and patrol fighters to intercept incoming bombers without straying from the ship or emplacement under attack.", -1)
+"The new UTM-32 Onager was developed as a long-range, anti-bomber missile with an effective range of 4,000 meters. It also utilizes the latest in precision targeting technology for short lock times. The Onager plays a vital role in defensive missions, enabling escort and patrol fighters to intercept incoming bombers without straying from their assigned ship or emplacement while under attack.", -1)
 $end_multi_text
 $Model File:									trebuchet.pof
 $Mass:											20.0
@@ -1598,13 +1598,13 @@ $Name:                                  @Drache
 +Title:                                 XSTR("UTM-47 Drache", -1)
 +Description:
 XSTR(
-"The Drache is a long-range, high payload TOW missile. It's nuclear warhead is designed for high stress manoeuvres.", -1)
+"The Drache is a long-range, high payload TOW missile. Its nuclear warhead is designed for high stress manoeuvres.", -1)
 $end_multi_text
 +Tech Title:				   XSTR("UTM-47 Drache", -1)
 +Tech Anim:					   Tech_GTM-55_Trebuchet
 +Tech Description:
 XSTR(
-"The new UTM-47 Drache was developed as a long-range, anti-capital missile with an effective range of 5,000 meters. The Drache plays a vital role in offensive missions, enabling bombers to avoid flak guns and still do moderate damage to the intend target. The main downside is that the Drache must be manually guided onto target.", -1)
+"The new UTM-47 Drache was developed as a long-range, anti-capital missile with an effective range of 5,000 meters. The Drache plays a vital role in offensive missions, enabling bombers to avoid flak guns and still do moderate damage to the intended target. The main downside is that the Drache must be manually guided onto target.", -1)
 $end_multi_text
 $Model File:									trebuchet.pof
 $Mass:											20.0
@@ -1656,7 +1656,7 @@ $end_multi_text
 +Tech Anim:					   Tech_GTM-55_Trebuchet
 +Tech Description:
 XSTR(
-"The UTMv-08 is limited to being launched from capital ships due to it's greatly increased space usage and payload.", -1)
+"The UTMv-08 is limited to capital ship missile bays due to its greatly increased space usage and payload.", -1)
 $end_multi_text
 $Model File:									KnightMssl.pof
 $Mass:											20.0
