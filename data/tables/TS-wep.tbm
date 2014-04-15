@@ -454,7 +454,7 @@ $BeamInfo:
 ;
 
 $Name:		TerSlashTurq
-	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
+	+Tech Title:					XSTR( "'Heimdallr I' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
@@ -554,11 +554,11 @@ $BeamInfo:
 
 
 ; ----------------------------------------------------------------------------------
-; Rindr
+; Heimdallr
 ;
 
 $Name:		TerBSlashTurq
-	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
+	+Tech Title:					XSTR( "'Heimdallr II' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
@@ -859,7 +859,7 @@ $BeamInfo:
 
 
 ; ----------------------------------------------------------------------------------
-; Aqua Lance
+; Baldr
 ;
 
 $Name:		LTurq
@@ -959,7 +959,7 @@ $BeamInfo:
 ;end
 
 ;--------------------------------------------------------------
-;
+; Woden
 ;
 
 $Name:		HTurq
@@ -1120,7 +1120,7 @@ $BeamInfo:
 	+Beam Piercing Splash Effect Velocity: 	-20
 	+Beam Piercing Effect Variance: 		0.01
 	$Section:
-		+Width:			7
+		+Width:			4
 		+Texture:		SPurpCore
 		+RGBA Inner:	255 255 255 255
 		+RGBA Outer:	150 150 150 10
@@ -1129,7 +1129,7 @@ $BeamInfo:
 		+Tile Factor:	9, 1
 		+Translation:	-18
 	$Section:
-		+Width:			14
+		+Width:			8
 		+Texture:		SPurpHaze1
 		+RGBA Inner:	160 160 0 255
 		+RGBA Outer:	60 60 0 10
@@ -1138,7 +1138,16 @@ $BeamInfo:
 		+Tile Factor:	12, 1
 		+Translation:	-10
 	$Section:
-		+Width:			25.0
+		+Width:			9.0
+		+Texture:		PurpCoreHaze1
+		+RGBA Inner:	160 160 0 255
+		+RGBA Outer:	60 60 0 10
+		+Flicker:		0.001
+		+Zadd:			1.0
+		+Tile Factor:	10, 1
+		+Translation:	-2
+	$Section:
+		+Width:			13.0
 		+Texture:		SPurpHaze2
 		+RGBA Inner:	255 255 255 255
 		+RGBA Outer:	150 150 150 10
@@ -1147,7 +1156,7 @@ $BeamInfo:
 		+Tile Factor:	12, 1
 		+Translation:	-6
 	$Section:
-		+Width:			40.0
+		+Width:			20.0
 		+Texture:		PurpFade
 		+RGBA Inner:	255 255 255 255
 		+RGBA Outer:	150 150 150 10
@@ -1357,9 +1366,9 @@ $Trail:
 	+End Alpha:		0.0
 	+Max Life:		0.6
 	+Bitmap:		massdriver_trail
-$Impact Explosion:					exp04
+$Impact Explosion:					dragonslave
 $Impact Explosion Radius: 			120.0
-$Piercing Impact Explosion: 		exp06
+$Piercing Impact Explosion: 		dragonslave
 $Piercing Impact Radius: 			60.0
 $Piercing Impact Velocity: 			200
 $Piercing Impact Splash Velocity: 	-10
@@ -1374,6 +1383,36 @@ $Pspew:
 	+Life:		0.1
 	+Scale:		1.5
 	+Bitmap:	Particle_Yellow
+$Pspew:
+	+Type: 		Plume
+	+Count:		1
+	+Time:		1
+	+Vel:		0.2
+	+Radius:	21.0
+	+Life:		4.0
+	+Scale:		1.0
+	+Offset:	0,0,10
+	+Bitmap:	Kayser_Particle		
+$Pspew:
+	+Type: 		Helix
+	+Count:		1
+	+Time:		1
+	+Vel:		0.3
+	+Radius:	10.5
+	+Life:		3.5
+	+Scale:		14.0
+	+Rotation Rate: 1
+	+Bitmap:	flashexp	
+$Pspew:
+	+Type: 		Helix
+	+Count:		1
+	+Time:		1
+	+Vel:		0.3
+	+Radius:	10.5
+	+Life:		3.5
+	+Scale:		20.0
+	+Rotation Rate: -2
+	+Bitmap:	flashexpblue
 
 
 #End
@@ -1531,7 +1570,7 @@ $Trail:
 	+End Alpha:				0.0
 	+Max Life:           1.5
 	+Bitmap:		TrailUT
-$Impact Explosion:            FlashExp
+$Impact Explosion:            Dragonslave
 $Impact Explosion Radius:        60.0 
 $Weapon Hitpoints:				450
 
