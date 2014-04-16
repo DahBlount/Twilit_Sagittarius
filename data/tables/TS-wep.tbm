@@ -454,13 +454,10 @@ $BeamInfo:
 ;
 
 $Name:		TerSlashTurq
-<<<<<<< HEAD
 	+Tech Title:					XSTR( "'Heimdallr I' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
-=======
 	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
->>>>>>> origin/lingual-stuff
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -563,13 +560,10 @@ $BeamInfo:
 ;
 
 $Name:		TerBSlashTurq
-<<<<<<< HEAD
 	+Tech Title:					XSTR( "'Heimdallr II' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
-=======
 	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
->>>>>>> origin/lingual-stuff
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -1130,8 +1124,8 @@ $BeamInfo:
 	+Beam Piercing Splash Effect Velocity: 	-20
 	+Beam Piercing Effect Variance: 		0.01
 	$Section:
-		+Width:			4
-		+Texture:		SPurpCore
+		+Width:			6
+		+Texture:		PurpCore
 		+RGBA Inner:	255 255 255 255
 		+RGBA Outer:	150 150 150 10
 		+Flicker:		0.1
