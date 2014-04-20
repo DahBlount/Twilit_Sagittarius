@@ -1,0 +1,192 @@
+#Conditional Hooks
+
+$Application: FS2_Open
+$On Game Init:
+[
+function error(str)
+    ba.error(str)
+end
+
+function warning(str)
+    ba.warning(str)
+end
+
+function print(str)
+    ba.print(str)
+end
+
+function stackError(str)
+    error(str .. "\n" .. debug.traceback() .. "\n")
+end
+
+function warningf(str, ...)
+    warning(string.format(str, ...))
+end
+
+function errorf(str, ...)
+    error(string.format(str, ...))
+end
+
+function printf(str, ...)
+    print(string.format(str, ...))
+end
+
+function stackErrorf(str, ...)
+    stackError(string.format(str, ...))
+end
+
+function string.starts(str, start)
+    return string.sub(str, 1, string.len(start)) == start
+end
+
+function string.ends(str, e)
+    return (e == '') or (string.sub(str, -string.len(e)) == e)
+end
+
+-- Nukes execute_lua_file function for executing lua files somewhere in the cfile system
+
+chunck_cache = {}
+--- function to load and run lua files
+-- takes string filename and boolean cacheonly
+-- cfile will try to find filename in all accesible locations and load it only if it hasnt done so already
+-- if cacheonly flag is set, code will be cached but not executed, good for inits. however it is ignored when calling an already cached chunk.
+-- returns true on success or nil on failure to find/load file
+function execute_lua_file(filename, cacheonly)
+    --dont reload chunks from file if they have already been loaded. because faster == badass
+    if (type(chunck_cache[filename]) == "table" and type(chunck_cache[filename][1]) == "function") then
+        if (not chunck_cache[filename][2] and not chunck_cache[filename][3]) then
+            chunck_cache[filename][2] = true
+            local val, err = pcall(chunck_cache[filename][1])
+            if (err) then
+                -- Add an boolean to indicate that this function has caused an error
+                chunck_cache[filename][3] = true
+
+                return false, string.format("Error while executing external lua file %q:\n%s", filename, err)
+            end
+            return true
+        else
+            return false
+        end
+    else
+        if (cf.fileExists(filename, "", true)) then
+            --open the file
+            local file = cf.openFile(filename, "r", "")
+            local fstring = file:read("*a") --load it all into a string
+            file:close()
+            if (fstring and type(fstring) == "string") then
+                --use the string as a code chunk and convert it to function
+                local func, error = loadstring(fstring, filename)
+                if (not func) then -- Compile error
+                    return false, string.format("Error while processing file %q. Errormessage:\n%s", filename, error)
+                end
+                chunck_cache[filename] = {}
+                chunck_cache[filename][1] = func
+                chunck_cache[filename][2] = false
+                --maybe execute
+                if (not cacheonly) then
+                    chunck_cache[filename][2] = true
+                    local val, err = xpcall(chunck_cache[filename][1], function(err)
+                    -- Add an boolean to indicate that this function has caused an error
+                        chunck_cache[filename][3] = true
+
+                        return string.format("Error while executing external lua file %q:\n%s\n\n%s", filename, err, debug.traceback())
+                    end)
+
+                    if (err) then
+                        return false, err
+                    end
+                end
+                return true
+            end
+        else
+            return false, string.format("Couldn't find external lua file %q!", filename)
+        end
+    end
+end
+
+function loadLuaFile(filename)
+    if (chunck_cache[filename]) then
+        return nil
+    else
+        if (cf.fileExists(filename, "", true)) then
+            --open the file
+            local file = cf.openFile(filename, "r", "")
+            local fstring = file:read("*a") --load it all into a string
+            file:close()
+            if (fstring and type(fstring) == "string") then
+                --use the string as a code chunk and convert it to function
+                local func, error = loadstring(fstring, filename)
+
+                if (not func) then -- Compile error
+                    return nil, string.format("Error while processing file %q. Errormessage:\n%s", filename, error)
+                end
+
+                return func
+            end
+        else
+            return nil, string.format("Couldn't find external lua file %q!", filename)
+        end
+    end
+end
+
+function include(fileName)
+    if (fileName == nil) then
+        stackErrorf("Invalid argument for 'include'!")
+    else
+        if (not fileName:ends(".lua")) then
+             fileName = fileName .. ".lua"
+        end
+
+        local succ, err = execute_lua_file(fileName)
+
+        if (not succ and err) then
+           error(err)
+        end
+    end
+end
+
+function hookVarsContain(name)
+    for i = 1, #hv.Globals do
+        if (hv.Globals[i] == name) then
+            return true
+        end
+    end
+    return false
+end
+
+-- Global table that can hold variables that should not be able to be changed
+Globals = {}
+
+function Globals:__newindex(index, value)
+    if (self[index] ~= nil) then
+        stackErrorf("Cannot set value to index %q. Index already used!", tostring(index))
+    else
+        rawset(self, index, value)
+    end
+end
+
+-- Initial values
+Globals.nullVec = ba.createVector(0, 0, 0)
+
+-----------------------------------------------------------
+-- Implementation of a module loader for the CFilesystem --
+-----------------------------------------------------------
+local function load(modulename)
+    if (not modulename:ends(".lua")) then
+        modulename = modulename .. ".lua"
+    end
+
+    local func, err = loadLuaFile(modulename)
+
+    if (func) then
+        return func
+    else
+        return "\n" .. err
+    end
+end
+
+-- Install the loader so that it's called just before the normal Lua loader
+table.insert(package.loaders, 2, load)
+]
+
+#End
