@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 04/07/14 at 07:27:26
+$Modified: 04/19/14 at 18:01:47
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -6570.402344, 612.434265, 6631.148926
++Viewer pos: 2166.461426, 765.460693, 1015.352905
 +Viewer orient:
-	0.163463, 0.000002, 0.986550,
-	-0.537417, 0.838602, 0.089044,
-	-0.827323, -0.544744, 0.137081
+	-0.838874, 0.000002, 0.544325,
+	-0.003764, 0.999976, -0.005805,
+	-0.544312, -0.006918, -0.838854
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -1056,15 +1056,15 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
 +Sbank Ammo: ( 0 )
 +Subsystem: turret05
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret06
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret07
 +Subsystem: turret08
 +Subsystem: turret09
@@ -1106,15 +1106,15 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
 +Subsystem: turret03
 +Subsystem: turret04
 +Sbank Ammo: ( 0 )
 +Subsystem: turret05
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret06
-+Primary Banks: ( "MPurp" )
++Primary Banks: ( "SPurp" )
 +Subsystem: turret07
 +Subsystem: turret08
 +Subsystem: turret09
@@ -1854,8 +1854,11 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Shields: 100
 +Subsystem: Pilot
 +Subsystem: turret01
++Primary Banks: ( "SPurp" )
 +Subsystem: turret02
++Primary Banks: ( "SPurp" )
 +Subsystem: turret03
++Primary Banks: ( "SPurp" )
 +Subsystem: turret04
 +Subsystem: turret05
 +Subsystem: turret06
@@ -2912,7 +2915,7 @@ $List: (		;! 1 points in list
 
 $Name: Coast is Clear
 $Team: -1
-$MessageNew:  XSTR("Everything looks clear Dante. Jump in.
+$MessageNew:  XSTR("Everything looks clear, Dante. Jump in.
 ", -1)
 $end_multi_text
 +Persona: Wingman 4
@@ -2920,14 +2923,14 @@ $end_multi_text
 
 $Name: Thank you Uranium
 $Team: -1
-$MessageNew:  XSTR("Thank you Uranium, leaving subspace in 10", -1)
+$MessageNew:  XSTR("Thank you Uranium, leaving subspace in 10...", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: So What...
 $Team: -1
-$MessageNew:  XSTR("So what exactly are we looking at?", -1)
+$MessageNew:  XSTR("So. What, exactly, are we looking at?", -1)
 $end_multi_text
 +Persona: Wingman 1
 +AVI Name: Head-TP1
@@ -2948,35 +2951,35 @@ $end_multi_text
 
 $Name: Don't know
 $Team: -1
-$MessageNew:  XSTR("We don't know. Hopefully, the scientists can discern the anomalies origins.", -1)
+$MessageNew:  XSTR("We don't know. Hopefully, our scientists can discern the anomalies origins.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Unknowns
 $Team: -1
-$MessageNew:  XSTR("Unknown ships are jumping in! All wings prepare for immediate attack!", -1)
+$MessageNew:  XSTR("Unknown ships are jumping in! All wings, prepare for immediate attack!", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Return to base
 $Team: -1
-$MessageNew:  XSTR("Great Job pilots, you may return to base.", -1)
+$MessageNew:  XSTR("Great job, pilots. You may return to base.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Dante Destroyed
 $Team: -1
-$MessageNew:  XSTR("The Dante has been destroyed, we need to call for immediate reinforcements and regroup.", -1)
+$MessageNew:  XSTR("The Dante has been destroyed. We need to call for immediate reinforcements and regroup.", -1)
 $end_multi_text
 +Persona: Wingman 3
 +AVI Name: Head-TP3
 
 $Name: Send in the science vessels
 $Team: -1
-$MessageNew:  XSTR("All hostiles are destroyed, send in the science vessels.", -1)
+$MessageNew:  XSTR("All hostiles are destroyed. Clear the science vessels for arrival.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
@@ -2997,14 +3000,14 @@ $end_multi_text
 
 $Name: Thanks for the help
 $Team: -1
-$MessageNew:  XSTR("Thank you for the help Uranium.", -1)
+$MessageNew:  XSTR("Thank you for the help, Uranium.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM1
 
 $Name: Thanks
 $Team: -1
-$MessageNew:  XSTR("Thanks for the help Uranium.", -1)
+$MessageNew:  XSTR("Thanks for the help, Uranium.", -1)
 $end_multi_text
 +Persona: Large Ship
 +AVI Name: Head-CM5

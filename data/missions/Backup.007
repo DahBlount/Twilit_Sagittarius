@@ -3,8 +3,8 @@
 $Version: 0.10
 $Name:  XSTR("Untitled", -1)
 $Author: tylerblount@yahoo.com
-$Created: 04/07/14 at 07:26:41
-$Modified: 04/07/14 at 07:26:41
+$Created: 04/19/14 at 18:00:52
+$Modified: 04/19/14 at 18:00:53
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -184,9 +184,9 @@ $Num stars: 500
 $Ambient light level: 7895160
 +Nebula: Nebula01
 +Color: Blue
-+Pitch: 66
-+Bank: 37
-+Heading: 251
++Pitch: 55
++Bank: 311
++Heading: 265
 
 #Asteroid Fields
 
