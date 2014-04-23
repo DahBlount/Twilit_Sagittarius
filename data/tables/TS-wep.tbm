@@ -1424,7 +1424,7 @@ $Pspew:
 #Secondary Weapons
 
 ; ----------------------------------------------------------------------------------
-; Lancelet
+; Lancelet (PLS or VBS?)
 ;
 $Name:		@Lancelet
 +Title:                                 XSTR("Mk-I PLS Prototype", -1)
