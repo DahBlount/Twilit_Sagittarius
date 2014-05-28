@@ -456,8 +456,6 @@ $BeamInfo:
 $Name:		TerSlashTurq
 	+Tech Title:					XSTR( "'Heimdallr I' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
-	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
-	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -562,8 +560,6 @@ $BeamInfo:
 $Name:		TerBSlashTurq
 	+Tech Title:					XSTR( "'Heimdallr II' Tactical Beam", -1 )
 	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. It's high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
-	+Tech Title:					XSTR( "'Heimdallr' Tactical Beam", -1 )
-	+Tech Description:				XSTR( "The 'Heimdallr' tactical beam is designed for use on most small sized warships and is an effective tool against most foes. Its high refire rate and decent energy output allows it to outclass the 'Rindr' direct-fire beam when mounted on the Nerthuz-class Fast Corvette.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
@@ -764,7 +760,7 @@ $BeamInfo:
 
 $Name:		MTurq
 	+Tech Title:					XSTR( "'Rindr' Beam System", -1 )
-	+Tech Description:				XSTR( "The 'Rindr' is a mid-range, direct fire beam system designed to be fired in salvoes. It is able to penetrate TiMo alloy armour with a thickness of 15cm. Thicker armor resists immediate breach due to thermal spalling effects.", -1 )
+	+Tech Description:				XSTR( "The 'Rindr' is a mid-range, direct fire beam system designed to be fired in salvoes. It is able to penetrate TiMo alloy armour with a thickness of 150mm. Thicker armor resists immediate breach due to thermal spalling effects.", -1 )
 $end_multi_text
 $Model File:						none
 @Laser Bitmap:						laserglow01
