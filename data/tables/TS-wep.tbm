@@ -1420,9 +1420,9 @@ $Pspew:
 #Secondary Weapons
 
 ; ----------------------------------------------------------------------------------
-; Lancelet (PLS or VBS?)
+; Sarissa (PLS)
 ;
-$Name:		@Lancelet
+$Name:		@Sarissa
 +Title:                                 XSTR("Mk-I PLS Prototype", -1)
 +Description:
 XSTR(
@@ -1432,7 +1432,7 @@ $end_multi_text
 +Tech Anim:					   Tech_GTM-55_Trebuchet
 +Tech Description:
 XSTR(
-"The Mk-I Vertical Beam System is similar to a photon cannon, but can be more easily manipulated using magnetic fields to guide the weapon onto its final attack vector. Still in prototype phase.", -1)
+"The Mk-I Parametric Laser System is similar to a photon cannon, but can be more easily manipulated using magnetic fields to guide the weapon onto its final attack vector. Still in prototype phase.", -1)
 $end_multi_text
 $Model File:						hornet.pof
 $POF target LOD:					0
