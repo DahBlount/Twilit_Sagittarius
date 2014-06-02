@@ -3,8 +3,8 @@
 $Version: 0.10
 $Name:  XSTR("Untitled", -1)
 $Author: tylerblount@yahoo.com
-$Created: 04/19/14 at 18:00:52
-$Modified: 04/19/14 at 18:00:53
+$Created: 06/01/14 at 16:03:14
+$Modified: 06/01/14 at 16:03:15
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -136,7 +136,25 @@ $Ship Choices: (
 )
 
 #Objects		;! 1 total
+		;;
+;; This file is messages.tbl.  It specifies all generic messages that can be sent to the player
+;; during the mission (at least for single player).  Format is as follows:
+;;
+;; #Personas
+;; $Persona: <name>				;; persona name
+;;
+;; repeat the above '$Persona:' field for as many personas as needed
+;;
+;; $Name: <name>					;; name is an identifier used in Freespace to play the message
+;; $Message: <message>			;; message is what actualy gets displayed to the player
+;; +Persona: <persona name>	;; name of persona for this message.  Must match one of the above personas
+;; +Wave Name: <wave file>		;; optional name of a wave file to play with this message
+;; +Avi Name: <avi file>		;; optional name of a flick to play with this message
+;;
+;;
+;;
 
+;; ALL CLEAR ..................................................................................
 $Name: GTF Ulysses 0		;! Object #0
 $Class: GTF Ulysses
 $Team: Friendly
@@ -184,9 +202,9 @@ $Num stars: 500
 $Ambient light level: 7895160
 +Nebula: Nebula01
 +Color: Blue
-+Pitch: 55
-+Bank: 311
-+Heading: 265
++Pitch: 192
++Bank: 344
++Heading: 187
 
 #Asteroid Fields
 
@@ -194,6 +212,59 @@ $Ambient light level: 7895160
 
 $Event Music: None
 $Briefing Music: None
+;; ARRIVAL (Enemy) ...................................................................
+
+;; ATTACK MY TARGET ...........................................................................
+
+;; BACKUP ARRIVAL (previously named "REINFORCEMENTS") .........................................
+
+;; BETA WING ARRIVAL ..........................................................................
+
+;; CHECK YOUR SIX .............................................................................
+
+;; DEATH (previously wingman scream)...................................................
+
+;; DELTA WING ARRIVAL .........................................................................
+
+;; DEPART (previously named "WARPOUT") ........................................................
+
+;; DISABLE TARGET .............................................................................
+
+;; DISARM TARGET ..............................................................................
+
+;; ENGAGE ENEMY ...............................................................................
+
+;; EPSILON ARRIVAL ............................................................................
+
+;; GAMMA ARRIVAL ..............................................................................
+
+;; HELP (REDUDANT TO ASSIST??) ................................................................
+
+;; IGNORE TARGET ..............................................................................
+
+;; NEGATIVE REPLIES ...........................................................................
+
+;; NO TARGET ..................................................................................
+
+;; Oops 1 (Player "accidentally" fires upon friendly ..........................................
+
+;; PLAYER KILLED (previously "player died")...........................................
+
+;; PRAISE .....................................................................................
+
+;; REARM ......................................................................................
+
+;; REPAIR .....................................................................................
+
+;; STRAY ............................................................................
+
+;; TRAITOR ...........................................................................
+
+;; YES ...............................................................................
+
+;; SUPPORT SHIP SECTION ..............................................................
+
+; MISC TERRAN COMMAND
 
 #End
 
