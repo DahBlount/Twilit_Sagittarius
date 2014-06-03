@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 04/19/14 at 18:05:17
+$Modified: 06/01/14 at 16:04:05
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 2166.461426, 765.460693, 1015.352905
++Viewer pos: 1456.814453, 5440.947266, -15745.727539
 +Viewer orient:
-	0.991869, 0.000002, 0.127262,
-	0.024340, 0.981536, -0.189721,
-	-0.124913, 0.191276, 0.973556
+	0.999624, 0.000002, 0.027422,
+	0.027108, -0.150972, -0.988166,
+	0.004138, 0.988538, -0.150915
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -3039,13 +3039,13 @@ $Bitmap List:
 $Sun: SunSol
 +Angles: 0.418879 0.000000 0.767945
 +Scale: 2.000000
-$Starbitmap: dneb03
+$Starbitmap: dneb02
 +Angles: 1.553343 0.000000 0.000000
 +ScaleX: 7.000000
 +ScaleY: 7.000000
 +DivX: 1
 +DivY: 1
-$Starbitmap: neb08
+$Starbitmap: neb07
 +Angles: 6.021386 0.000000 5.899213
 +ScaleX: 9.000000
 +ScaleY: 9.000000
@@ -3057,13 +3057,13 @@ $Starbitmap: planetf
 +ScaleY: 3.000000
 +DivX: 1
 +DivY: 1
-$Starbitmap: dneb06
+$Starbitmap: dneb07
 +Angles: 3.665192 0.767945 1.553343
 +ScaleX: 7.000000
 +ScaleY: 7.000000
 +DivX: 1
 +DivY: 1
-$Starbitmap: dneb01
+$Starbitmap: dneb02
 +Angles: 3.141593 0.000000 0.000000
 +ScaleX: 10.000000
 +ScaleY: 10.000000
@@ -3071,8 +3071,8 @@ $Starbitmap: dneb01
 +DivY: 1
 $Starbitmap: NebulE1-Main
 +Angles: 0.000000 0.000000 0.000000
-+ScaleX: 8.000000
-+ScaleY: 8.000000
++ScaleX: 5.000000
++ScaleY: 5.000000
 +DivX: 1
 +DivY: 1
 

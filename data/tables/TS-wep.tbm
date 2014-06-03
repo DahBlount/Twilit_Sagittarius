@@ -1434,7 +1434,7 @@ $end_multi_text
 XSTR(
 "The Mk-I Parametric Laser System is similar to a photon cannon, but can be more easily manipulated using magnetic fields to guide the weapon onto its final attack vector. Still in prototype phase.", -1)
 $end_multi_text
-$Model File:						hornet.pof
+$Model File:						Sarissa.pof
 $POF target LOD:					0
 $Mass:								0.0
 $Velocity:							5000.0

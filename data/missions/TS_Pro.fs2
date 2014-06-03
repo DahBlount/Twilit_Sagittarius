@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 06/01/14 at 16:08:46
+$Modified: 06/02/14 at 11:49:31
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,18 +23,18 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: 1683.812622, 1951.590088, -3726.716064
++Viewer pos: -461.788544, 452.747803, -1626.843994
 +Viewer orient:
-	0.781908, 0.000001, 0.623394,
-	0.022313, 0.999359, -0.027988,
-	-0.622994, 0.035794, 0.781407
+	0.577586, 0.000001, -0.816330,
+	-0.464910, 0.821984, -0.328941,
+	0.671010, 0.569511, 0.474766
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
 $Squadron wing names: ( "Uranium" "Iridium" "Nickel" "Mercury" "Tungsten" )
 $Team-versus-team wing names: ( "Uranium" "Iridium" )
 
-$Skybox Model: FirstNebulaSkybox.pof
+$Skybox Model: ColdNeb.pof
 
 $AI Profile: FS2 RETAIL
 
@@ -3036,7 +3036,7 @@ $Num stars: 2000
 $Ambient light level: 7895160
 
 $Bitmap List:
-$Sun: SunSol
+$Sun: SunBlue
 +Angles: 0.418879 0.000000 0.767945
 +Scale: 2.000000
 $Starbitmap: planetf
