@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 06/02/14 at 11:49:31
+$Modified: 06/20/14 at 12:41:44
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -25,9 +25,9 @@ $end_multi_text
 
 +Viewer pos: -461.788544, 452.747803, -1626.843994
 +Viewer orient:
-	0.577586, 0.000001, -0.816330,
-	-0.464910, 0.821984, -0.328941,
-	0.671010, 0.569511, 0.474766
+	-0.590217, 0.000001, -0.807244,
+	-0.501091, 0.784014, 0.366374,
+	0.632892, 0.620743, -0.462738
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -597,6 +597,7 @@ $Ship Choices: (
 	"Blitz"	160
 	"Drache"	60
 	"Prometheus S"	12
+	"Kukri"	8
 )
 
 #Objects		;! 53 total

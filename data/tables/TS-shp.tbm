@@ -47,13 +47,13 @@ $Expl damage:					25.0
 $Expl blast:					1000.0
 $Expl Propagates:				NO			;; If set to Yes, then when the ship dies, the explosion propagates through it.
 $Shockwave Speed:				0.0			;; speed shockwave expands at, 0 means no shockwave
-$Allowed PBanks:				( "Prudr" "Collbrande" "Spitfire" "Subach HL-7" "Akheton SDG" "Morning Star" "Prometheus S" "Prometheus R" "UD-8 Kayser" "Lamprey" "Circe" "Maxim" )
+$Allowed PBanks:				( "Prudr" "Kukri" "Collbrande" "Spitfire" "Subach HL-7" "Akheton SDG" "Morning Star" "Prometheus S" "Prometheus R" "UD-8 Kayser" "Lamprey" "Circe" "Maxim" )
 $Allowed Dogfight PBanks:			( "MorningStar D" "UD-D Kayser" "Circe" "Lamprey" "Maxim D" )
-$Default PBanks:				( "Prudr" "Spitfire" )
+$Default PBanks:				( "Kukri" "Spitfire" )
 $PBank Capacity:				( 300,300)
 $Allowed SBanks:				( "Rockeye" "Blitz" "Drache" "Tempest" "Harpoon" "Trebuchet" "Infyrno" "Hornet" "Tornado" "Hornet#Weak" "EMP Adv." "TAG-A" "TAG-B" )
 $Allowed Dogfight SBanks:				( "Harpoon D" "Tornado D" )
-$Default SBanks:				( "Trebuchet" "Blitz" )
+$Default SBanks:				( "Blitz" "Blitz" )
 $SBank Capacity:				( 80, 120 )
 $Shields:						500
 $Shield Color:				255 0 0

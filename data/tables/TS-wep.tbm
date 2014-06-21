@@ -296,7 +296,7 @@ $Homing:                        NO
 $LaunchSnd:                     124             ;; The sound it makes when fired
 $ImpactSnd:                     88             ;; The sound it makes when it hits something
 +Weapon Range:			2500			;; Limit to range at which weapon will actively target object
-$Flags:                         ("Big Ship" "beam" "cycle" "no pierce shields")
+$Flags:                         ("Big Ship" "beam" "no pierce shields")
 $Icon:                          icongun05
 $Anim:                          LoadGun07
 $Impact Explosion:              ExpMissileHit1
@@ -349,6 +349,84 @@ $Burst Delay:					350
 $Burst Flags:					( "fast firing" )
 ;end
 
+;------------------------------------------------
+; Kukri
+;
+
+$Name:                          Kukri
+	+Tech Title:			XSTR( "Fighter-mounted Beam", -1 )
++Tech Anim:		 tech_exaaa
+	+Tech Description:		XSTR( "The 'Dellingr' Anti-Fighter beam is able to fire several shots in quick succession before entering a brief cooldown sequence. Highly effective against even the heaviest of bombers, this can also be used as a supplementary weapon against capital ships.",  -1 )
+$end_multi_text
+$Model File:                    none ; laser1-1.pof
+@Laser Bitmap:                  laserglow01
+@Laser Color:					136, 243, 249
+@Laser Length:					0.0
+@Laser Head Radius:				0.60
+@Laser Tail Radius:				0.60
+$Mass:                          5000.0
+$Velocity:                      5000.0          ;; speed of the weapon (initially) -- may or may not change
+$Fire Wait:                     .1             ;; in seconds
+$Damage:                        30				;; NOTE: for beam weapons this is kind of a "continuous" damage applied every few fractions of a second that the beam is on.
+$Armor Factor:                  1.0
+$Shield Factor:                 1.0
+$Subsystem Factor:              1.0
+$Lifetime:                      40.0            ;; How long this thing lives
+$Energy Consumed:               0.30            ;; Energy used when fired
+$Cargo Size:                    0.0             ;; Amount of space taken up in weapon cargo
+$Homing:                        NO
+$LaunchSnd:                     silence             ;; The sound it makes when fired
+$ImpactSnd:                     88             ;; The sound it makes when it hits something
++Weapon Range:			3500			;; Limit to range at which weapon will actively target object
+$Flags:                         ( "player allowed" "beam" "no pierce shields")
+$Icon:                          icongun05
+$Anim:                          LoadGun07
+$Impact Explosion:              ExpMissileHit1
+$Impact Explosion Radius:       10.0
+$BeamInfo:
+	+Type:						0				;; 0 - 4 are valid #'s
+	+Life:			  			.15				;; how long it lasts once the beam is actually firing
+	+Warmup:		  			50			;; warmup time in ms
+	+Warmdown:					0			;; warmdown time in ms
+	+Radius:		  			2.0			;; muzzle glow radius in meters
+	+PCount:					20				;; particles spewed every interval
+	+PRadius:					.1				;; particle radius
+	+PAngle:					65.0			;; angle of the random "cone" where the particles are generated
+	+PAni:						particle_blue	;; particle ani
+	+Miss Factor:				2.5 1.875 1.25 0.875 0.5		;; magic # - higher == miss more (only really applicable to type 0 and type 3 beams)
+	+BeamSound:					147				;; the looping beam-firing sound
+	+WarmupSound:				silence				;; associated warmup sound
+	+WarmdownSound:				159				;; associated warmdown sound
+	+Muzzleglow:				BeamTurq	;; muzzle glow bitmap
+	+Shots:						0				;; only used for TYPE 3 beams
+	+ShrinkFactor:				0.0			;; what percentage of lifetime where beam starts shrinking (0.1 == 10% life left)
+	+ShrinkPct:					0.0			;; what percentage of max width we subtract per second
+	+BeamWidth:					2.0
+	$Section: ;; one section of the beam (you can have up to 5)
+		+Width: 				1.0 
+		+Texture: 				AAABeamAT 
+		+RGBA Inner: 			255 255 255 255 
+		+RGBA Outer: 			150 150 150 10 
+		+Flicker:				0.0 
+		+Zadd: 					2.5 
+		+Tile Factor: 			40, 1
+		+Translation: 			-0.2
+	$Section:								;; one section of the beam
+		+Width:					1.0				;; width of the section
+		+Texture:				TrailUT		;; texture for this section
+		+RGBA Inner:			160 160 0 255	;; rgba values (only for non-textured beam compiles)
+		+RGBA Outer:			60 60 0 10		;; rgba values (only for non-textured beam compiles)
+		+Flicker:				0.0				;; how much it flickers (0.0 to 1.0)
+		+Zadd:					1.0				;; hehe
+		+Tile Factor:			90, 1
+		+Translation:				-3
+	$Section:
+		+Width:					3.0
+		+Texture:				TurqFade
+		+RGBA Inner:			255 255 255 255
+		+RGBA Outer:			150 150 150 10
+		+Flicker:				0.35
+;end
 
 ; ----------------------------------------------------------------------------------
 ; GBTurq
