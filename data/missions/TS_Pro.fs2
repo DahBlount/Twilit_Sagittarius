@@ -42,13 +42,13 @@ $AI Profile: FS2 RETAIL
 
 $Stage Text:
  XSTR("Prologue: Reapers
-You are a pilot in the United Terran Navy. Your job is to protect the Union of Terran Systems from any possible threats that exist.", -1)
+You are a pilot in the United Terran Navy. Your job is to protect the Union of Terran Systems from any possible threats.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
 
 $Stage Text:
- XSTR("However, other than pirates, none of the possible enemies have appeared and many are beginning to believe that Terrans are alone in the Universe.", -1)
+ XSTR("However, other than pirates, no new threats - neither internal nor external - have arisen, and many are beginning to believe that Terrans are alone in the Universe.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
