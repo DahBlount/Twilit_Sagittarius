@@ -54,7 +54,7 @@ $Ani Filename: <default>
 +Wave Filename: none
 
 $Stage Text:
- XSTR("This all changes when a EM signature not unlike that of a UTN ship is detected in an unexplored system. You are specially selected to escort the fleet sent to investigate the signal.", -1)
+ XSTR("This all changes when an EM signature not unlike that of a UTN ship is detected in an unexplored system. You are specially selected to escort the fleet sent to investigate the signal.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
@@ -214,7 +214,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("No hostile forces have been detected but with the speed at which news travels, there may already be pirates in the system. Be prepared to fight under any circumstances.", -1)
+ XSTR("No hostile forces have been detected, but with the speed at which news travels, there may already be pirates in the system. Be prepared to fight under any circumstances.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 18052.681641, 3036.229980, 421.519470
@@ -290,7 +290,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("After any possible hostile forces have been removed, science vessels as well as two corvettes, the Dauntless and the Courageous, will join jump in to assist with studying the anomaly.", -1)
+ XSTR("After any possible hostile forces have been removed, science vessels as well as two corvettes, the Dauntless and the Courageous, will perform a joint jump-in to assist with studying the anomaly.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 18052.681641, 3036.229980, 421.519470
@@ -402,7 +402,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("After the science vessels reach the anomaly, you are free to return to base.", -1)
+ XSTR("After the science vessels reach the anomaly, you are free to return to base. The Gilgamesh is not exactly well-suited for static defense; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 20090.912109, 3293.388672, 188.549286
