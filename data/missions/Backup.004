@@ -3,8 +3,8 @@
 $Version: 0.10
 $Name:  XSTR("Untitled", -1)
 $Author: tylerblount@yahoo.com
-$Created: 06/20/14 at 12:39:39
-$Modified: 06/20/14 at 12:39:39
+$Created: 07/07/14 at 19:39:40
+$Modified: 07/07/14 at 19:39:41
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -86,6 +86,7 @@ $Ship Choices: (
 	"Collbrande"	16
 	"Spitfire"	16
 	"Prudr"	16
+	"Kukri"	16
 	"Rockeye"	500
 	"Rockeye D"	500
 	"Tempest"	500
@@ -184,9 +185,9 @@ $Num stars: 500
 $Ambient light level: 7895160
 +Nebula: Nebula01
 +Color: Blue
-+Pitch: 23
-+Bank: 177
-+Heading: 283
++Pitch: 142
++Bank: 152
++Heading: 149
 
 #Asteroid Fields
 

@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 06/20/14 at 12:39:53
+$Modified: 07/07/14 at 19:39:53
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -25,9 +25,9 @@ $end_multi_text
 
 +Viewer pos: -461.788544, 452.747803, -1626.843994
 +Viewer orient:
-	0.577586, 0.000001, -0.816330,
-	-0.464910, 0.821984, -0.328941,
-	0.671010, 0.569511, 0.474766
+	0.969467, 0.000001, -0.245221,
+	-0.049893, 0.979084, -0.197246,
+	0.240091, 0.203458, 0.949190
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -42,19 +42,19 @@ $AI Profile: FS2 RETAIL
 
 $Stage Text:
  XSTR("Prologue: Reapers
-You are a pilot in the United Terran Navy. Your job is to protect the Union of Terran Systems from any possible threats that exist.", -1)
+You are a pilot in the United Terran Navy. Your job is to protect the Union of Terran Systems from any possible threats.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
 
 $Stage Text:
- XSTR("However, other than pirates, none of the possible enemies have appeared and many are beginning to believe that Terrans are alone in the Universe.", -1)
+ XSTR("However, other than pirates, no new threats - neither internal nor external - have arisen, and many are beginning to believe that Terrans are alone in the Universe.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
 
 $Stage Text:
- XSTR("This all changes when a EM signature not unlike that of a UTN ship is detected in an unexplored system. You are specially selected to escort the fleet sent to investigate the signal.", -1)
+ XSTR("This all changes when an EM signature not unlike that of a UTN ship is detected in an unexplored system. You are specially selected to escort the fleet sent to investigate the signal.", -1)
 $end_multi_text
 $Ani Filename: <default>
 +Wave Filename: none
@@ -214,7 +214,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("No hostile forces have been detected but with the speed at which news travels, there may already be pirates in the system. Be prepared to fight under any circumstances.", -1)
+ XSTR("No hostile forces have been detected, but with the speed at which news travels, there may already be pirates in the system. Be prepared to fight under any circumstances.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 18052.681641, 3036.229980, 421.519470
@@ -290,7 +290,7 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("After any possible hostile forces have been removed, science vessels as well as two corvettes, the Dauntless and the Courageous, will join jump in to assist with studying the anomaly.", -1)
+ XSTR("After any possible hostile forces have been removed, science vessels as well as two corvettes, the Dauntless and the Courageous, will perform a joint jump-in to assist with studying the anomaly.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 18052.681641, 3036.229980, 421.519470
@@ -402,7 +402,9 @@ $end_icon
 $end_stage
 $start_stage
 $multi_text
- XSTR("After the science vessels reach the anomaly, you are free to return to base.", -1)
+ XSTR("After the science vessels reach the anomaly, you are free to return to base. The Gilgamesh is not exactly well-suited for static defense; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 20090.912109, 3293.388672, 188.549286
@@ -3037,7 +3039,7 @@ $Num stars: 2000
 $Ambient light level: 7895160
 
 $Bitmap List:
-$Sun: SunBlue
+$Sun: SunRed
 +Angles: 0.418879 0.000000 0.767945
 +Scale: 2.000000
 $Starbitmap: planetf
