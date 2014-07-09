@@ -88,19 +88,19 @@ $Thruster Bitmap Distortion:	thruster02-01UT
 $Thruster Bitmap Distortion a:	thruster02-01UTa
 $Thruster Distortion Length factor: 	3
 $Thruster Particles:
-$Afterburner Particle Bitmap:	particle_turq
+$Thruster Particle Bitmap:	particle_turq
 $Min Radius:				.2
 $Max Radius:				.3
 $Min Created:				1
 $Max Created:				2
-$Variance:					.2
+$Variance:					.05
 $Thruster Particles:
 $Afterburner Particle Bitmap:	particle_turq
 $Min Radius:				.2
 $Max Radius:				.5
 $Min Created:				1
 $Max Created:				3
-$Variance:					.25
+$Variance:					.1
 $Trail:
 	+Offset:				2.7 4.3 -9.45
 	+Start Width:			0.25

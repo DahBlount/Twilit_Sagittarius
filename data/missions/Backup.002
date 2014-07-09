@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 07/07/14 at 19:40:26
+$Modified: 07/08/14 at 19:37:39
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -461.788544, 452.747803, -1626.843994
++Viewer pos: -160.987411, 914.094421, -2963.291260
 +Viewer orient:
-	-0.992233, 0.000000, -0.124389,
-	-0.066046, 0.847393, 0.526842,
-	0.105407, 0.530966, -0.840812
+	-0.993613, 0.000004, -0.112844,
+	-0.012031, 0.994297, 0.105966,
+	0.112201, 0.106647, -0.987946
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -405,6 +405,9 @@ $multi_text
  XSTR("After the science vessels reach the anomaly, you are free to return to base. The Gilgamesh is not exactly well-suited for static defense; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 20090.912109, 3293.388672, 188.549286
@@ -3039,7 +3042,7 @@ $Num stars: 2000
 $Ambient light level: 7895160
 
 $Bitmap List:
-$Sun: SunRed
+$Sun: SunViolet
 +Angles: 0.418879 0.000000 0.767945
 +Scale: 2.000000
 $Starbitmap: planetf
