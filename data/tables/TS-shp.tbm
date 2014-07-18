@@ -13,7 +13,7 @@ $Species:                       UTN
 +Description:					XSTR(" ", -1)
 $end_multi_text
 +Tech Description:
-XSTR("The newest fighter from Reagan Tech, it incorporates a COFFIN v3.0 cockpit instead of the usual glass canopy. With an excellent balance of speed, manoeuvrability, armor, and payload, the Gilgamesh is one of the most advanced fighters built to date.", -1)
+XSTR("The newest fighter from Reagan Tech, incorporating a COFFIN v3.0 cockpit instead of the usual glass canopy. With an excellent balance of speed, manoeuvrability, armor, and payload, the Gilgamesh is one of the most advanced fighters built to date.", -1)
 $end_multi_text
 +Length:          27 m
 +Gun Mounts:      8
