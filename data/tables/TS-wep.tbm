@@ -433,7 +433,7 @@ $BeamInfo:
 ;
 
 $Name:		GBTurq
-	+Tech Title:					XSTR( "'Jormungandr' Beam Cannon", -1 )
+	+Tech Title:					XSTR( "'Jormungandr' Super Gravity Cannon", -1 )
 	+Tech Description:				XSTR( "", -1 )
 $end_multi_text
 $Model File:						none
