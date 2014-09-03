@@ -1,0 +1,129 @@
+#Conditional Hooks
+
+$Application: FS2_Open
+$On Game Init:
+[
+function getLivingTime(maxLife, lifeLeft)
+ if (maxLife == nil or lifeLeft == nil) then
+  return -1
+ end
+ 
+ local time = maxLife - lifeLeft
+ 
+ return time
+end
+
+function weaponLivingTime(weapon)
+ if (weapon == nil or not weapon:isValid()) then
+  return -1
+ end
+ 
+ local maxLife = weapon.Class.LifeMax
+ local lifeLeft = weapon.LifeLeft
+ 
+ if (weapon.Class:isMissile() and weapon.HomingObject:isValid()) then
+  maxLife = maxLife * 1.2 -- "fix" for LiveLeft altering in code/weapons.cpp:4664
+ end
+ 
+ return getLivingTime(maxLife, lifeLeft)
+end
+
+function createWeaponParticle(weapon, velocity, lifeTime, radiusScale, texture)
+ if (weapon == nil or not weapon:isValid()) then
+  return
+ end
+ 
+ local model = weapon.Class.Model
+ local thrusters = model.Thrusters
+ for i=1, #thrusters do
+  local bank = thrusters[i]
+  if (bank:isValid()) then
+   for j=1, #bank do
+    local glow = bank[j]
+    if (glow:isValid()) then
+     local realVec = weapon.Orientation:unrotateVector(glow.Position)
+     local globalVec = weapon.Position + realVec
+     
+     ts.createParticle(globalVec, velocity, lifeTime, glow.Radius * radiusScale, PARTICLE_BITMAP, -1, false, texture)
+    end
+   end
+  end
+ end
+end
+
+nullVector = ba.createVector(0, 0, 0)
+maxFrameTime = 1 / 10
+]
+
+$State: GS_STATE_GAME_PLAY
+$On Frame: 
+[
+if ba.getFrametime() > maxFrameTime then 
+ return -- If FPS is already low don't lower it with even more load
+end
+
+if (trailTexture == nil or not trailTexture:isValid()) then
+ return
+end
+
+if (ignitionAnim == nil or not ignitionAnim:isValid()) then
+ return
+end
+
+for i=1, #mn.Weapons do
+ local weapon = mn.Weapons[i]  
+ 
+ if (weapon:isValid() and weapon.Class:isMissile() and weapon.HomingObject:isValid() and weaponLivingTime(weapon) > weapon.Class.FreeFlightTime) then
+  local velVec = weapon.Physics.Velocity - weapon:getfvec(true) * 200
+  if ((weapon:getfvec(true) * 200):getMagnitude() > weapon.Physics.Velocity:getMagnitude()) then
+   velVec = velVec / 20
+  end
+  
+  local radius = (1 - (weapon.Class.Speed / weapon.Physics.Velocity:getMagnitude())) * 1.5
+  if (radius > 3) then
+   radius = 3
+  end
+  
+  createWeaponParticle(weapon, velVec, particleLifeTime, radius * 3, trailTexture)
+  
+  if (weapon.Class.FreeFlightTime > 0 and weaponLivingTime(weapon) >= weapon.Class.FreeFlightTime and (weaponLivingTime(weapon) - ba.getFrametime()) <= weapon.Class.FreeFlightTime) then
+   createWeaponParticle(weapon, nullVector, ingitionLifeTime, radius * 5, ignitionAnim)
+  end
+ end
+end
+]
+
+$Application: FS2_Open
+$On Mission Start: 
+[
+trailTexture = gr.loadTexture("capflash", true)
+if (trailTexture ~= nil and trailTexture:isValid()) then
+ particleLifeTime = trailTexture:getFramesLeft() / trailTexture:getFPS()
+end
+
+ignitionAnim = gr.loadTexture("exp20", true)
+if (ignitionAnim ~= nil and ignitionAnim:isValid()) then
+ ingitionLifeTime =  ignitionAnim:getFramesLeft() / ignitionAnim:getFPS()
+end
+
+if (trailTexture == nil or not trailTexture:isValid()) then
+ ba.warning("Invalid trail texture!")
+elseif (ignitionAnim == nil or not ignitionAnim:isValid()) then
+ ba.warning("Invalid ignition texture!")
+end
+]
+
+$Application: FS2_Open
+$On Mission End: 
+[
+if (trailTexture ~= nil) then
+ trailTexture:unload()
+ trailTexture = nil
+end
+if (ignitionAnim ~= nil) then
+ ignitionAnim:unload()
+ ignitionAnim = nil
+end
+]
+
+#End
