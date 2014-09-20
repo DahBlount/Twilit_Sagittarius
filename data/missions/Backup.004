@@ -2,9 +2,9 @@
 
 $Version: 0.10
 $Name:  XSTR("Untitled", -1)
-$Author: tylerblount@yahoo.com
-$Created: 07/08/14 at 19:36:41
-$Modified: 07/08/14 at 19:36:42
+$Author: Windows User
+$Created: 09/06/14 at 20:54:12
+$Modified: 09/06/14 at 20:54:13
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -111,6 +111,13 @@ $Ship Choices: (
 	"Cyclops#short"	500
 	"Helios"	500
 	"EMP Adv."	500
+	"TAG-K"	500
+	"TAG-BEAM"	500
+	"TAG-BEAM#BFRed"	500
+	"Hornet#Red"	500
+	"Hornet#Blue"	500
+	"Hornet#Green"	500
+	"Hornet#Spam"	500
 	"Rockeye#Shivan"	500
 	"Rockeye D#Shivan"	500
 	"Tempest#Shivan"	500
@@ -134,10 +141,31 @@ $Ship Choices: (
 	"Blitz"	500
 	"Onager"	500
 	"Drache"	500
+	"Hornet#RedChild"	500
+	"Hornet#BlueChild"	500
+	"Hornet#GreenChild"	500
 )
 
 #Objects		;! 1 total
+		;;
+;; This file is messages.tbl.  It specifies all generic messages that can be sent to the player
+;; during the mission (at least for single player).  Format is as follows:
+;;
+;; #Personas
+;; $Persona: <name>				;; persona name
+;;
+;; repeat the above '$Persona:' field for as many personas as needed
+;;
+;; $Name: <name>					;; name is an identifier used in Freespace to play the message
+;; $Message: <message>			;; message is what actualy gets displayed to the player
+;; +Persona: <persona name>	;; name of persona for this message.  Must match one of the above personas
+;; +Wave Name: <wave file>		;; optional name of a wave file to play with this message
+;; +Avi Name: <avi file>		;; optional name of a flick to play with this message
+;;
+;;
+;;
 
+;; ALL CLEAR ..................................................................................
 $Name: GTF Ulysses 0		;! Object #0
 $Class: GTF Ulysses
 $Team: Friendly
@@ -185,9 +213,9 @@ $Num stars: 500
 $Ambient light level: 7895160
 +Nebula: Nebula01
 +Color: Blue
-+Pitch: 273
-+Bank: 16
-+Heading: 100
++Pitch: 226
++Bank: 307
++Heading: 4
 
 #Asteroid Fields
 
@@ -195,6 +223,59 @@ $Ambient light level: 7895160
 
 $Event Music: None
 $Briefing Music: None
+;; ARRIVAL (Enemy) ...................................................................
+
+;; ATTACK MY TARGET ...........................................................................
+
+;; BACKUP ARRIVAL (previously named "REINFORCEMENTS") .........................................
+
+;; BETA WING ARRIVAL ..........................................................................
+
+;; CHECK YOUR SIX .............................................................................
+
+;; DEATH (previously wingman scream)...................................................
+
+;; DELTA WING ARRIVAL .........................................................................
+
+;; DEPART (previously named "WARPOUT") ........................................................
+
+;; DISABLE TARGET .............................................................................
+
+;; DISARM TARGET ..............................................................................
+
+;; ENGAGE ENEMY ...............................................................................
+
+;; EPSILON ARRIVAL ............................................................................
+
+;; GAMMA ARRIVAL ..............................................................................
+
+;; HELP (REDUDANT TO ASSIST??) ................................................................
+
+;; IGNORE TARGET ..............................................................................
+
+;; NEGATIVE REPLIES ...........................................................................
+
+;; NO TARGET ..................................................................................
+
+;; Oops 1 (Player "accidentally" fires upon friendly ..........................................
+
+;; PLAYER KILLED (previously "player died")...........................................
+
+;; PRAISE .....................................................................................
+
+;; REARM ......................................................................................
+
+;; REPAIR .....................................................................................
+
+;; STRAY ............................................................................
+
+;; TRAITOR ...........................................................................
+
+;; YES ...............................................................................
+
+;; SUPPORT SHIP SECTION ..............................................................
+
+; MISC TERRAN COMMAND
 
 #End
 

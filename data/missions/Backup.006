@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 07/08/14 at 12:57:15
+$Modified: 09/06/14 at 20:53:45
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -160.987411, 914.094421, -2963.291260
++Viewer pos: -316.247620, 137.792740, -87.388718
 +Viewer orient:
-	-0.993613, 0.000004, -0.112844,
-	-0.012031, 0.994297, 0.105966,
-	0.112201, 0.106647, -0.987946
+	0.047632, -0.000000, -0.998865,
+	0.159251, 0.987209, 0.007594,
+	0.986088, -0.159432, 0.047023
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -407,6 +407,15 @@ $multi_text
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 20090.912109, 3293.388672, 188.549286
@@ -573,7 +582,7 @@ $Ship Choices: (
 )
 
 +Weaponry Pool: (
-	"Subach HL-7"	20
+	"Subach HL-7"	16
 	"Mekhu HL-7"	16
 	"Akheton SDG"	16
 	"Morning Star"	100
@@ -583,12 +592,12 @@ $Ship Choices: (
 	"Lamprey"	16
 	"Collbrande"	100
 	"Spitfire"	14
-	"Prudr"	14
+	"Prudr"	18
 	"Rockeye"	500
-	"Tempest"	1140
+	"Tempest"	500
 	"Hornet"	1900
-	"Tornado"	564
-	"Harpoon"	532
+	"Tornado"	500
+	"Harpoon"	500
 	"Trebuchet"	580
 	"TAG-A"	500
 	"TAG-B"	500
@@ -600,11 +609,12 @@ $Ship Choices: (
 	"EMP Adv."	500
 	"Blitz"	160
 	"Drache"	60
-	"Prometheus S"	12
-	"Kukri"	8
+	"Prometheus S"	8
+	"Kukri"	4
+	"TAG-BEAM#BFRed"	80
 )
 
-#Objects		;! 53 total
+#Objects		;! 49 total
 
 $Name: Uranium 1		;! Object #0
 $Class: UTNF Gilgamesh
@@ -618,6 +628,8 @@ $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Subsystem: Pilot
++Primary Banks: ( "Prudr" "Spitfire" )
++Secondary Banks: ( "TAG-BEAM#BFRed" "Blitz" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -641,6 +653,8 @@ $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Subsystem: Pilot
++Primary Banks: ( "Prudr" "Spitfire" )
++Secondary Banks: ( "TAG-BEAM#BFRed" "Blitz" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -664,6 +678,8 @@ $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Subsystem: Pilot
++Primary Banks: ( "Prudr" "Spitfire" )
++Secondary Banks: ( "TAG-BEAM#BFRed" "Blitz" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1161,6 +1177,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1187,6 +1204,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1213,6 +1231,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1239,6 +1258,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1265,6 +1285,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1291,6 +1312,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
++Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1316,6 +1338,8 @@ $AI Behavior: None
 $Cargo 1:  XSTR("Nothing", -1)
 +Initial Hull: 100
 +Subsystem: Pilot
++Primary Banks: ( "Prudr" "Spitfire" )
++Secondary Banks: ( "TAG-BEAM#BFRed" "Blitz" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1576,123 +1600,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 800
 
-$Name: Nickel 1		;! Object #29
-$Class: GTF Myrmidon
-$Team: Friendly
-$Location: -5500.000000, 2000.000000, -1632.500000
-$Orientation:
-	0.868410, 0.000000, -0.495848,
-	0.087987, 0.984130, 0.154097,
-	0.487979, -0.177447, 0.854628
-$AI Behavior: None
-+AI Class: Colonel
-$AI Goals: ( goals ( ai-guard "UTNCv Dauntless" 55 ) ( ai-chase-any 55 ) )
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
-+Initial Hull: 100
-+Subsystem: Pilot
-+Primary Banks: ( "Prometheus S" "Subach HL-7" )
-+Secondary Banks: ( "Harpoon" "Tornado" "Tempest" )
-$Arrival Location: Hyperspace
-$Arrival Cue: ( false ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" )
-+Flags2: ( )
-+Respawn priority: 0
-+Group: 0
-+Use Table Score:
-+Score: 10
-
-$Name: Nickel 2		;! Object #30
-$Class: GTF Myrmidon
-$Team: Friendly
-$Location: -5467.913574, 2000.000000, -1674.023315
-$Orientation:
-	0.870563, 0.000000, -0.492056,
-	0.087160, 0.984187, 0.154206,
-	0.484275, -0.177134, 0.856797
-$AI Behavior: None
-+AI Class: Colonel
-$AI Goals: ( goals ( ai-guard "UTNCv Dauntless" 55 ) ( ai-chase-any 55 ) )
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
-+Initial Hull: 100
-+Subsystem: Pilot
-+Primary Banks: ( "Prometheus S" "Subach HL-7" )
-+Secondary Banks: ( "Harpoon" "Tornado" "Tempest" )
-$Arrival Location: Hyperspace
-$Arrival Cue: ( false ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" )
-+Flags2: ( )
-+Respawn priority: 0
-+Group: 0
-+Use Table Score:
-+Score: 10
-
-$Name: Nickel 3		;! Object #31
-$Class: GTF Myrmidon
-$Team: Friendly
-$Location: -5530.361328, 2000.000000, -1670.960327
-$Orientation:
-	0.868085, 0.000000, -0.496416,
-	0.087716, 0.984265, 0.153390,
-	0.488605, -0.176699, 0.854425
-$AI Behavior: None
-+AI Class: Colonel
-$AI Goals: ( goals ( ai-guard "UTNCv Dauntless" 55 ) ( ai-chase-any 55 ) )
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
-+Initial Hull: 100
-+Subsystem: Pilot
-+Primary Banks: ( "Prometheus S" "Subach HL-7" )
-+Secondary Banks: ( "Harpoon" "Tornado" "Tempest" )
-$Arrival Location: Hyperspace
-$Arrival Cue: ( false ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" )
-+Flags2: ( )
-+Respawn priority: 0
-+Group: 0
-+Use Table Score:
-+Score: 10
-
-$Name: Nickel 4		;! Object #32
-$Class: GTF Myrmidon
-$Team: Friendly
-$Location: -5495.535645, 2000.000122, -1705.501587
-$Orientation:
-	0.870186, 0.000000, -0.492724,
-	0.086967, 0.984300, 0.153590,
-	0.484989, -0.176503, 0.856524
-$AI Behavior: None
-+AI Class: Colonel
-$AI Goals: ( goals ( ai-guard "UTNCv Dauntless" 55 ) ( ai-chase-any 55 ) )
-$Cargo 1:  XSTR("Nothing", -1)
-+Initial Velocity: 33
-+Initial Hull: 100
-+Subsystem: Pilot
-+Primary Banks: ( "Prometheus S" "Subach HL-7" )
-+Secondary Banks: ( "Harpoon" "Tornado" "Tempest" )
-$Arrival Location: Hyperspace
-$Arrival Cue: ( false ) 
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Determination: 10
-+Flags: ( "cargo-known" )
-+Flags2: ( )
-+Respawn priority: 0
-+Group: 0
-+Use Table Score:
-+Score: 10
-
-$Name: Tungsten 1		;! Object #33
+$Name: Tungsten 1		;! Object #29
 $Class: GTF Hercules Mark II
 $Team: Friendly
 $Location: -5898.888184, -0.001173, -1497.637695
@@ -1719,7 +1627,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Tungsten 2		;! Object #34
+$Name: Tungsten 2		;! Object #30
 $Class: GTF Hercules Mark II
 $Team: Friendly
 $Location: -5859.161621, -0.001174, -1537.968140
@@ -1746,7 +1654,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Tungsten 3		;! Object #35
+$Name: Tungsten 3		;! Object #31
 $Class: GTF Hercules Mark II
 $Team: Friendly
 $Location: -5937.062500, -0.001158, -1536.720703
@@ -1773,7 +1681,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Tungsten 4		;! Object #36
+$Name: Tungsten 4		;! Object #32
 $Class: GTF Hercules Mark II
 $Team: Friendly
 $Location: -5901.422852, -0.001153, -1574.016235
@@ -1800,7 +1708,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: UC 1		;! Object #37
+$Name: UC 1		;! Object #33
 $Class: SC Rakshasa
 $Team: Hostile
 $Location: -8000.000000, -800.000000, 7000.000000
@@ -1845,7 +1753,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 300
 
-$Name: UC 2		;! Object #38
+$Name: UC 2		;! Object #34
 $Class: SC Rakshasa
 $Team: Hostile
 $Location: -8500.000000, -800.000000, 7000.000000
@@ -1890,7 +1798,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 300
 
-$Name: Argon 1		;! Object #39
+$Name: Argon 1		;! Object #35
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10383.700195, 0.000000, 8158.700195
@@ -1915,7 +1823,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Argon 2		;! Object #40
+$Name: Argon 2		;! Object #36
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10388.848633, 0.000015, 8053.875977
@@ -1940,7 +1848,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Argon 3		;! Object #41
+$Name: Argon 3		;! Object #37
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10436.246094, 0.000002, 8100.188965
@@ -1965,7 +1873,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Argon 4		;! Object #42
+$Name: Argon 4		;! Object #38
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10345.625000, 0.000019, 8103.049316
@@ -1990,7 +1898,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Argon 5		;! Object #43
+$Name: Argon 5		;! Object #39
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10451.514648, 0.000004, 8031.941895
@@ -2015,7 +1923,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Argon 6		;! Object #44
+$Name: Argon 6		;! Object #40
 $Class: SF Basilisk
 $Team: Hostile
 $Location: -10318.357422, 0.000003, 8024.981445
@@ -2040,7 +1948,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 12
 
-$Name: Krypton 1		;! Object #45
+$Name: Krypton 1		;! Object #41
 $Class: SB Seraphim
 $Team: Hostile
 $Location: -10606.900391, 0.000000, 7711.000000
@@ -2068,7 +1976,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 16
 
-$Name: Krypton 2		;! Object #46
+$Name: Krypton 2		;! Object #42
 $Class: SB Seraphim
 $Team: Hostile
 $Location: -10580.591797, 0.000009, 7816.991211
@@ -2096,7 +2004,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 16
 
-$Name: Krypton 3		;! Object #47
+$Name: Krypton 3		;! Object #43
 $Class: SB Seraphim
 $Team: Hostile
 $Location: -10713.175781, -0.000030, 7773.737793
@@ -2124,7 +2032,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 16
 
-$Name: Krypton 4		;! Object #48
+$Name: Krypton 4		;! Object #44
 $Class: SB Seraphim
 $Team: Hostile
 $Location: -10664.282227, -0.000013, 7882.737793
@@ -2152,7 +2060,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 16
 
-$Name: Scandium 1		;! Object #49
+$Name: Scandium 1		;! Object #45
 $Class: GTF Myrmidon
 $Team: Friendly
 $Location: 210.286331, -0.000243, -4131.875488
@@ -2179,7 +2087,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 10
 
-$Name: Scandium 2		;! Object #50
+$Name: Scandium 2		;! Object #46
 $Class: GTF Myrmidon
 $Team: Friendly
 $Location: 237.287720, -0.000238, -4156.910156
@@ -2206,7 +2114,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 10
 
-$Name: Scandium 3		;! Object #51
+$Name: Scandium 3		;! Object #47
 $Class: GTF Myrmidon
 $Team: Friendly
 $Location: 177.382477, -0.000290, -4157.138672
@@ -2233,7 +2141,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 10
 
-$Name: Scandium 4		;! Object #52
+$Name: Scandium 4		;! Object #48
 $Class: GTF Myrmidon
 $Team: Friendly
 $Location: 210.228409, -0.000329, -4195.233398
@@ -2260,7 +2168,7 @@ $Determination: 10
 +Use Table Score:
 +Score: 10
 
-#Wings		;! 11 total
+#Wings		;! 10 total
 
 $Name: Uranium
 $Waves: 1
@@ -2364,29 +2272,6 @@ $Ships: (		;! 2 total
 	"UCv 1"
 	"UCv 2"
 )
-+Flags: ( )
-
-$Name: Nickel
-$Waves: 1
-$Wave Threshold: 0
-$Special Ship: 0		;! Nickel 1
-
-$Arrival Location: Near Ship
-+Arrival Distance: 500
-$Arrival Anchor: UTNCv Dauntless
-$Arrival Cue: ( is-event-true-delay 
-   "Science vessels arrive" 
-   0 
-)
-$Departure Location: Hyperspace
-$Departure Cue: ( false ) 
-$Ships: (		;! 4 total
-	"Nickel 1"
-	"Nickel 2"
-	"Nickel 3"
-	"Nickel 4"
-)
-+Hotkey: 2
 +Flags: ( )
 
 $Name: Tungsten
@@ -3041,9 +2926,6 @@ $Num stars: 2000
 $Ambient light level: 7895160
 
 $Bitmap List:
-$Sun: SunWhite
-+Angles: 0.418879 0.000000 0.698132
-+Scale: 0.500000
 $Sun: SunBlue
 +Angles: 0.418879 0.000000 0.767945
 +Scale: 2.000000
