@@ -137,6 +137,7 @@ $Trail:
 	+Max Life:				1.0
 	+Spew Time:				120
 	+Bitmap:				Contrail01
+;;$Glowpoint overrides:		( )
 $Subsystem:                     sensors,                                10,0.0
 $Subsystem:                     communications, 10,0.0
 $Subsystem:                     weapons,                                10,0.0

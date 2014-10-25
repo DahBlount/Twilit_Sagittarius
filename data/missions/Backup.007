@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 09/06/14 at 20:52:39
+$Modified: 09/06/14 at 20:55:00
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -5005.979004, 2019.689819, -1417.652466
++Viewer pos: -769.654724, 215.243469, -149.063614
 +Viewer orient:
-	-0.405450, -0.000000, 0.914117,
-	-0.190096, 0.978138, -0.084316,
-	-0.894133, -0.207956, -0.396586
+	0.155495, -0.000000, -0.987837,
+	0.345767, 0.936741, 0.054427,
+	0.925347, -0.350024, 0.145658
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -611,6 +611,7 @@ $Ship Choices: (
 	"Drache"	60
 	"Prometheus S"	8
 	"Kukri"	8
+	"TAG-BEAM#BFRed"	160
 )
 
 #Objects		;! 49 total

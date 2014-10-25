@@ -994,45 +994,45 @@ $BeamInfo:
 	+Beam Piercing Effect Velocity: 		200
 	+Beam Piercing Splash Effect Velocity: 	-20
 	+Beam Piercing Effect Variance: 		0.01
+	;$Section:
+		;+Width:			20
+		;+Texture:		LTurqCore
+		;+RGBA Inner:	255 255 255 255
+		;+RGBA Outer:	150 150 150 10
+		;+Zadd:			9
+		;+Tile Factor:	10, 1
+		;+Translation:	-15
+	;$Section:
+		;+Width:			40
+		;+Texture:		LTurqHaze1
+		;+RGBA Inner:	160 160 0 255
+		;+RGBA Outer:	60 60 0 10
+		;+Zadd:			6
+		;+Tile Factor:	10, 1
+		;+Translation:	12
+	;$Section:
+		;+Width:			45.0
+		;+Texture:		LTurqHaze2
+		;+RGBA Inner:	160 160 255 255
+		;+RGBA Outer:	60 60 0 10
+		;+Zadd:			4
+		;+Tile Factor:	16, 1
+		;+Translation:	-6
 	$Section:
-		+Width:			20
-		+Texture:		LTurqCore
-		+RGBA Inner:	255 255 255 255
-		+RGBA Outer:	150 150 150 10
-		+Zadd:			9
-		+Tile Factor:	10, 1
-		+Translation:	-15
-	$Section:
-		+Width:			40
-		+Texture:		LTurqHaze1
-		+RGBA Inner:	160 160 0 255
-		+RGBA Outer:	60 60 0 10
-		+Zadd:			6
-		+Tile Factor:	10, 1
-		+Translation:	12
-	$Section:
-		+Width:			45.0
-		+Texture:		LTurqHaze2
-		+RGBA Inner:	160 160 255 255
-		+RGBA Outer:	60 60 0 10
-		+Zadd:			4
-		+Tile Factor:	16, 1
-		+Translation:	-6
-	$Section:
-		+Width:			50.0
-		+Texture:		LTurqHaze3
+		+Width:			50
+		+Texture:		BeamuB
 		+RGBA Inner:	160 160 0 255
 		+RGBA Outer:	60 60 0 10
 		+Zadd:			2
-		+Tile Factor:	40, 1
+		+Tile Factor:	20, 0
 		+Translation:	-3
-	$Section:
-		+Width:			65.0
-		+Texture:		TurqFade
-		+RGBA Inner:	255 255 255 255
-		+RGBA Outer:	150 150 150 10
-		+Zadd:			1
-		+Translation:	-3
+	;$Section:
+		;+Width:			65.0
+		;+Texture:		TurqFade
+		;+RGBA Inner:	255 255 255 255
+		;+RGBA Outer:	150 150 150 10
+		;+Zadd:			1
+		;+Translation:	-3
 		
 ;end
 
@@ -1806,7 +1806,7 @@ $ImpactSnd:										88                                           ;; The sound i
 $FlyBySnd:										-1
 $Rearm Rate:									0.1														;; number of missiles/sec that are rearmed
 +Weapon Range:		12500
-$Flags:											( "supercap" "Huge" "Big Ship" "No Dumbfire" "same turret cooldown" "no lifeleft penalty" "cycle" )
+$Flags:											( "supercap" "Huge" "Big Ship" "No Dumbfire" "same turret cooldown" "no lifeleft penalty" "cycle" "particle spew")
 $Trail:																										;; Trail cannot be set if Exhaust is set
 	+Start Width:								2.0                                         ;; Width of trail nearest missile
 	+End Width:									0.0                                          ;; Width of trail before it "evaporates"
@@ -1829,9 +1829,9 @@ $Pspew:
 	+Time:		1
 	+Vel:		0.0
 	+Radius:	0.6
-	+Life:		0.1
+	+Life:		1.0
 	+Scale:		0.0
-	+Bitmap:	missilespew02
+	+Bitmap:	exp20
 $Thruster Flame Effect:							Thruster02-01UTa
 $Thruster Glow Effect:							Thruster03-01UTa
 

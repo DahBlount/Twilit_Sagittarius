@@ -4,7 +4,7 @@ $Version: 0.10
 $Name:  XSTR("Prologue: Reaper", -1)
 $Author: DahBlount
 $Created: 09/02/13 at 09:41:33
-$Modified: 09/06/14 at 20:54:26
+$Modified: 10/20/14 at 15:54:54
 $Notes:
 This is a FRED2_OPEN created mission.
 $End Notes:
@@ -23,11 +23,11 @@ $end_multi_text
 +Hull Repair Ceiling: 0.000000
 +Subsystem Repair Ceiling: 100.000000
 
-+Viewer pos: -5005.979004, 2019.689819, -1417.652466
++Viewer pos: -769.654724, 215.243469, -149.063614
 +Viewer orient:
-	-0.405450, -0.000000, 0.914117,
-	-0.190096, 0.978138, -0.084316,
-	-0.894133, -0.207956, -0.396586
+	0.155495, 0.000000, -0.987837,
+	0.345767, 0.936741, 0.054427,
+	0.925347, -0.350024, 0.145658
 +SquadReassignName: 33rd Night Hawks
 
 $Starting wing names: ( "Uranium" "Iridium" "Nickel" )
@@ -416,6 +416,7 @@ $multi_text
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 ; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
+; we may need you ready for redeployment if additional vessels are brought in and require escort.", -1)
 $end_multi_text
 $voice: none.wav
 $camera_pos: 20090.912109, 3293.388672, 188.549286
@@ -593,6 +594,7 @@ $Ship Choices: (
 	"Collbrande"	100
 	"Spitfire"	14
 	"Prudr"	14
+	"Kukri"	8
 	"Rockeye"	500
 	"Tempest"	500
 	"Hornet"	1900
@@ -610,8 +612,6 @@ $Ship Choices: (
 	"Blitz"	160
 	"Drache"	60
 	"Prometheus S"	8
-	"Kukri"	8
-	"TAG-BEAM#BFRed"	160
 )
 
 #Objects		;! 49 total
@@ -1171,7 +1171,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1198,7 +1198,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1225,7 +1225,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1252,7 +1252,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1279,7 +1279,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
@@ -1306,7 +1306,7 @@ $Cargo 1:  XSTR("Nothing", -1)
 +Initial Velocity: 33
 +Initial Hull: 100
 +Subsystem: Pilot
-+Secondary Banks: ( "Trebuchet#Shivan" "Hornet#Spam" )
++Secondary Banks: ( "Trebuchet#Shivan" "" )
 $Arrival Location: Hyperspace
 $Arrival Cue: ( false ) 
 $Departure Location: Hyperspace
